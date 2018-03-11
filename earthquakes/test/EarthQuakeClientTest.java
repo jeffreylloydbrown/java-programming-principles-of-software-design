@@ -81,7 +81,7 @@ class EarthQuakeClientTest {
         EarthQuakeClient e = new EarthQuakeClient();
         System.out.println("bigQuakes()");
         e.bigQuakes();
-        System.out.println("complete\n");
+        System.out.println("bigQuakes() complete\n");
     }
 
     @Test
@@ -89,7 +89,7 @@ class EarthQuakeClientTest {
         EarthQuakeClient e = new EarthQuakeClient();
         System.out.println("closeToMe()");
         e.closeToMe();
-        System.out.println("complete\n");
+        System.out.println("closeToMe() complete\n");
     }
 
     @Test
@@ -97,7 +97,15 @@ class EarthQuakeClientTest {
         EarthQuakeClient e = new EarthQuakeClient();
         System.out.println("createCSV()");
         e.createCSV();
-        System.out.println("complete\n");
+        System.out.println("createCSV() complete\n");
+    }
+
+    @Test
+    void quakesOfDepth () {
+        EarthQuakeClient e = new EarthQuakeClient();
+        System.out.println("quakesOfDepth()");
+        e.quakesOfDepth();
+        System.out.println("quakesOfDepth() complete\n");
     }
 
 }

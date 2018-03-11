@@ -105,5 +105,21 @@ public class EarthQuakeClient {
             System.out.println(qe);
         }
     }
+
+    public void quakesOfDepth() {
+        EarthQuakeParser parser = new EarthQuakeParser();
+        String source = "test/data/nov20quakedatasmall.atom";
+        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
+        ArrayList<QuakeEntry> list  = parser.read(source);
+        System.out.println("read data for " + list.size() + " quakes");
+        double minDepth = -10000.0;
+        double maxDepth = -5000.0;
+        System.out.println("Find quakes with depth between "+minDepth+" and "+maxDepth);
+        list = filterByDepth(list, minDepth, maxDepth);
+        for (QuakeEntry qe : list) {
+            System.out.println(qe);
+        }
+        System.out.println("Found "+list.size()+" quakes that match that criteria");
+    }
     
 }
