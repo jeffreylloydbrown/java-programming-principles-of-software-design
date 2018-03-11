@@ -50,6 +50,29 @@ class EarthQuakeClientTest {
     }
 
     @Test
+    void filterByDepth () {
+        EarthQuakeClient e = new EarthQuakeClient();
+        EarthQuakeParser parser = new EarthQuakeParser();
+        String source = "test/data/nov20quakedatasmall.atom";
+        ArrayList<QuakeEntry> list  = parser.read(source);
+        assertEquals(25, list.size());
+
+        // check for null safety
+        assertEquals(0, e.filterByDepth(new ArrayList<QuakeEntry>(), 0.0, 0.0).size());
+        assertEquals(0, e.filterByDepth(null, 0.0, 0.0).size());
+
+        // min and max order don't matter.
+        assertEquals(25, e.filterByDepth(list, +100000000, -1000000000).size());
+        assertEquals(25, e.filterByDepth(list, -100000000, +1000000000).size());
+
+        // minDepth == maxDepth always finds nothing.
+        assertEquals(0, e.filterByDepth(list, -10000, -10000).size());
+
+        // from assignment
+        assertEquals(5, e.filterByDepth(list, -10000, -5000).size());
+    }
+
+    @Test
     void dumpCSV () {
     }
 

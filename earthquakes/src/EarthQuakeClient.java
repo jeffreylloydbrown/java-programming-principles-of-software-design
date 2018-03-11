@@ -30,6 +30,24 @@ public class EarthQuakeClient {
         return answer;
     }
 
+    public ArrayList<QuakeEntry>
+    filterByDepth(ArrayList<QuakeEntry> quakeData, double minDepth, double maxDepth) {
+        ArrayList<QuakeEntry> answer = new ArrayList<QuakeEntry>();
+        if (quakeData == null || quakeData.isEmpty()) return answer;
+        // make sure minDepth really is <= maxDepth
+        if (minDepth > maxDepth) {
+            double temp = minDepth;
+            minDepth = maxDepth;
+            maxDepth = temp;
+        }
+
+        for (QuakeEntry qe : quakeData)
+            if (minDepth < qe.getDepth() && qe.getDepth() < maxDepth)
+                answer.add(qe);
+
+        return answer;
+    }
+
     public void dumpCSV(ArrayList<QuakeEntry> list){
         System.out.println("Latitude,Longitude,Magnitude,Info");
         for(QuakeEntry qe : list){
