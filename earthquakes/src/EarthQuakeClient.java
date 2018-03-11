@@ -147,5 +147,23 @@ public class EarthQuakeClient {
         }
         System.out.println("Found "+list.size()+" quakes that match that criteria");
     }
+
+    private void printPhraseStep (ArrayList<QuakeEntry> list, String where, String phrase) {
+        ArrayList<QuakeEntry> filtered = filterByPhrase(list, where, phrase);
+        for (QuakeEntry qe : filtered)
+            System.out.println(qe);
+        System.out.println("Found "+filtered.size()+" that match "+phrase+" at "+where);
+    }
+
+    public void quakesByPhrase() {
+        EarthQuakeParser parser = new EarthQuakeParser();
+        String source = "test/data/nov20quakedatasmall.atom";
+        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
+        ArrayList<QuakeEntry> list  = parser.read(source);
+        System.out.println("read data for " + list.size() + " quakes");
+        printPhraseStep(list, "end", "California");
+        printPhraseStep(list, "any", "Can");
+        printPhraseStep(list, "start", "Explosion");
+    }
     
 }

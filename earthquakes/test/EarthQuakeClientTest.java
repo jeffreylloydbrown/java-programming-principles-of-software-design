@@ -133,4 +133,12 @@ class EarthQuakeClientTest {
         System.out.println("quakesOfDepth() complete\n");
     }
 
+    @Test
+    void quakesByPhrase () {
+        EarthQuakeClient e = new EarthQuakeClient();
+        System.out.println("quakesByPhrase()");
+        e.quakesByPhrase();
+        System.out.println("quakesByPhrase() complete\n");
+    }
+
 }
