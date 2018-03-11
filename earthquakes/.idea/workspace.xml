@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbef1b4f-e8bc-47da-9c98-b81bf2c551d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EarthQuakeClient.java" afterPath="$PROJECT_DIR$/src/EarthQuakeClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/EarthQuakeClientTest.java" afterPath="$PROJECT_DIR$/test/EarthQuakeClientTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ClosestQuakes.java" afterPath="$PROJECT_DIR$/src/ClosestQuakes.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,31 +14,48 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/earthquakes$EarthQuakeClientTest.coverage" NAME="EarthQuakeClientTest Coverage Results" MODIFIED="1520801801381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/earthquakes$EarthQuakeClientTest.coverage" NAME="EarthQuakeClientTest Coverage Results" MODIFIED="1520802676764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ClosestQuakes</FILTER>
       <FILTER>EarthQuakeClient</FILTER>
       <FILTER>QuakeEntry</FILTER>
       <FILTER>EarthQuakeParser</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/earthquakes$EarthQuakeParser.coverage" NAME="EarthQuakeParser Coverage Results" MODIFIED="1520802612845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ClosestQuakes</FILTER>
+      <FILTER>EarthQuakeClient</FILTER>
+      <FILTER>EarthQuakeParser</FILTER>
+      <FILTER>QuakeEntry</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/earthquakes$ClosestQuakesTest.coverage" NAME="ClosestQuakesTest Coverage Results" MODIFIED="1520810345967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ClosestQuakes</FILTER>
+      <FILTER>EarthQuakeClient</FILTER>
+      <FILTER>EarthQuakeParser</FILTER>
+      <FILTER>QuakeEntry</FILTER>
+    </SUITE>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EarthQuakeClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/EarthQuakeClient.java">
+      <file leaf-file-name="ClosestQuakes.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ClosestQuakes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="165" column="52" lean-forward="false" selection-start-line="165" selection-start-column="52" selection-end-line="165" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="-362">
+              <caret line="12" column="90" lean-forward="false" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
+              <folding>
+                <element signature="e#1313#1325#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EarthQuakeClientTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/EarthQuakeClientTest.java">
+      <file leaf-file-name="ClosestQuakesTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/ClosestQuakesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="139" column="24" lean-forward="false" selection-start-line="139" selection-start-column="24" selection-end-line="139" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="221">
+              <caret line="41" column="78" lean-forward="false" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
+              <folding>
+                <element signature="e#241#242#0" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,6 +66,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,12 +86,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ClosestQuakes.java" />
         <option value="$PROJECT_DIR$/test/data/nov20quakedata.atom" />
         <option value="$PROJECT_DIR$/src/EarthQuakeClient2.java" />
-        <option value="$PROJECT_DIR$/src/EarthQuakeParser.java" />
         <option value="$PROJECT_DIR$/test/EarthQuakeClientTest.java" />
         <option value="$PROJECT_DIR$/src/EarthQuakeClient.java" />
+        <option value="$PROJECT_DIR$/src/EarthQuakeParser.java" />
+        <option value="$PROJECT_DIR$/test/ClosestQuakesTest.java" />
+        <option value="$PROJECT_DIR$/src/ClosestQuakes.java" />
       </list>
     </option>
   </component>
@@ -159,7 +178,81 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EarthQuakeClientTest.quakesByPhrase">
+  <component name="RunManager" selected="JUnit.ClosestQuakesTest">
+    <configuration name="ClosestQuakesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ClosestQuakes" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="EarthQuakeClient" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="EarthQuakeParser" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="QuakeEntry" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="earthquakes" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClosestQuakesTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ClosestQuakesTest.getClosest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ClosestQuakes" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="EarthQuakeClient" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="EarthQuakeParser" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="QuakeEntry" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="earthquakes" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClosestQuakesTest" />
+      <option name="METHOD_NAME" value="getClosest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="EarthQuakeClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -186,80 +279,6 @@
       <option name="MAIN_CLASS_NAME" value="EarthQuakeClientTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="EarthQuakeClientTest.closeToMe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ClosestQuakes" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="EarthQuakeClient" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="QuakeEntry" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="EarthQuakeParser" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="earthquakes" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EarthQuakeClientTest" />
-      <option name="METHOD_NAME" value="closeToMe" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="EarthQuakeClientTest.filterByMagnitude" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ClosestQuakes" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="EarthQuakeClient" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="QuakeEntry" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="EarthQuakeParser" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="earthquakes" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EarthQuakeClientTest" />
-      <option name="METHOD_NAME" value="filterByMagnitude" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
@@ -309,11 +328,28 @@
       <patterns />
     </configuration>
     <configuration name="EarthQuakeParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ClosestQuakes" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="EarthQuakeClient" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="EarthQuakeParser" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="QuakeEntry" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="MAIN_CLASS_NAME" value="EarthQuakeParser" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -405,17 +441,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.EarthQuakeParser" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest.filterByMagnitude" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest.closeToMe" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest.quakesByPhrase" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest.quakesByPhrase" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ClosestQuakesTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ClosestQuakesTest.getClosest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest.quakesByPhrase" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest.closeToMe" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest.filterByMagnitude" />
-        <item index="4" class="java.lang.String" itemvalue="Application.EarthQuakeParser" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ClosestQuakesTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ClosestQuakesTest.getClosest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.EarthQuakeParser" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest.quakesByPhrase" />
       </list>
     </recent_temporary>
   </component>
@@ -438,35 +474,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EarthQuakeClientTest - 2018.03.11 at 15h 24m 08s.xml">
-      <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest - 2018.03.11 at 18h 19m 08s.xml">
+      <configuration name="ClosestQuakesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthQuakeClientTest - 2018.03.11 at 15h 33m 22s.xml">
-      <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest_getClosest - 2018.03.11 at 17h 54m 20s.xml">
+      <configuration name="ClosestQuakesTest.getClosest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthQuakeClientTest - 2018.03.11 at 15h 33m 32s.xml">
-      <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest_getClosest - 2018.03.11 at 18h 02m 30s.xml">
+      <configuration name="ClosestQuakesTest.getClosest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthQuakeClientTest - 2018.03.11 at 15h 38m 10s.xml">
-      <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest_getClosest - 2018.03.11 at 18h 02m 56s.xml">
+      <configuration name="ClosestQuakesTest.getClosest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthQuakeClientTest - 2018.03.11 at 15h 39m 55s.xml">
-      <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest_getClosest - 2018.03.11 at 18h 06m 01s.xml">
+      <configuration name="ClosestQuakesTest.getClosest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthQuakeClientTest - 2018.03.11 at 15h 54m 53s.xml">
-      <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest_getClosest - 2018.03.11 at 18h 06m 48s.xml">
+      <configuration name="ClosestQuakesTest.getClosest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthQuakeClientTest - 2018.03.11 at 15h 56m 38s.xml">
-      <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest_getClosest - 2018.03.11 at 18h 10m 05s.xml">
+      <configuration name="ClosestQuakesTest.getClosest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthQuakeClientTest - 2018.03.11 at 15h 56m 43s.xml">
-      <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest_getClosest - 2018.03.11 at 18h 12m 53s.xml">
+      <configuration name="ClosestQuakesTest.getClosest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthQuakeClientTest - 2018.03.11 at 16h 04m 12s.xml">
-      <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest_getClosest - 2018.03.11 at 18h 15m 17s.xml">
+      <configuration name="ClosestQuakesTest.getClosest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthQuakeClientTest_quakesByPhrase - 2018.03.11 at 16h 04m 17s.xml">
-      <configuration name="EarthQuakeClientTest.quakesByPhrase" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest_getClosest - 2018.03.11 at 18h 16m 21s.xml">
+      <configuration name="ClosestQuakesTest.getClosest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -487,7 +523,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -566,14 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClosestQuakes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -597,28 +625,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EarthQuakeParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="104" column="35" lean-forward="false" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="35" />
-          <folding>
-            <marker date="1520796792738" expanded="true" signature="4065:4084" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MinMagFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuakeEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -631,11 +641,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/EarthQuakeParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="104" column="8" lean-forward="true" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+          <folding>
+            <marker date="1520802605874" expanded="true" signature="4065:4084" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/EarthQuakeClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
+        <state relative-caret-position="2634">
           <caret line="165" column="52" lean-forward="false" selection-start-line="165" selection-start-column="52" selection-end-line="165" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ClosestQuakesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="41" column="78" lean-forward="false" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
+          <folding>
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuakeEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LargestQuakes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClosestQuakes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-362">
+          <caret line="12" column="90" lean-forward="false" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
+          <folding>
+            <element signature="e#1313#1325#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
