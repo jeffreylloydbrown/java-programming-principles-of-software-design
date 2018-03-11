@@ -12,11 +12,10 @@ public class LargestQuakes {
         return largestIndex;
     }
 
-    public ArrayList<QuakeEntry> getLargest(ArrayList<QuakeEntry> quakeData, Location current, int howMany) {
+    public ArrayList<QuakeEntry> getLargest(ArrayList<QuakeEntry> quakeData, int howMany) {
         ArrayList<QuakeEntry> ret = new ArrayList<QuakeEntry>();
         // Verify parameters
         if (quakeData == null || quakeData.isEmpty()) return ret;
-        if (current == null) return ret;
         if (howMany <= 0) return ret;
 
         // Make a copy of the input list so we can safely destroy it.
@@ -40,8 +39,10 @@ public class LargestQuakes {
         //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
         ArrayList<QuakeEntry> list  = parser.read(source);
         System.out.println("read data for "+list.size()+" quakes");
-
-       //System.out.println("number found: "+close.size());
+        ArrayList<QuakeEntry> largest5 = getLargest(list, 5);
+        for (QuakeEntry qe : largest5)
+            System.out.println(qe);
+        System.out.println("number found: "+largest5.size());
     }  // findLargestQuakes
 
 }  // LargestQuakes

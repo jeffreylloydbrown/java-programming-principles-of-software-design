@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbef1b4f-e8bc-47da-9c98-b81bf2c551d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ClosestQuakes.java" afterPath="$PROJECT_DIR$/src/ClosestQuakes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LargestQuakes.java" afterPath="$PROJECT_DIR$/src/LargestQuakes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ClosestQuakesTest.java" afterPath="$PROJECT_DIR$/test/ClosestQuakesTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/LargestQuakesTest.java" afterPath="$PROJECT_DIR$/test/LargestQuakesTest.java" />
@@ -37,18 +36,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ClosestQuakes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ClosestQuakes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
-              <folding>
-                <element signature="e#1313#1325#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LargestQuakes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LargestQuakes.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,26 +51,13 @@
       <file leaf-file-name="LargestQuakesTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/LargestQuakesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
               <folding>
                 <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#891#903#0" expanded="true" />
-                <element signature="e#1749#1761#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClosestQuakesTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ClosestQuakesTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="69" lean-forward="false" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
-              <folding>
-                <element signature="e#241#242#0" expanded="true" />
-                <element signature="e#317#318#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#892#904#0" expanded="true" />
+                <element signature="e#1750#1762#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,10 +94,10 @@
         <option value="$PROJECT_DIR$/test/EarthQuakeClientTest.java" />
         <option value="$PROJECT_DIR$/src/EarthQuakeClient.java" />
         <option value="$PROJECT_DIR$/src/EarthQuakeParser.java" />
-        <option value="$PROJECT_DIR$/test/ClosestQuakesTest.java" />
-        <option value="$PROJECT_DIR$/test/LargestQuakesTest.java" />
         <option value="$PROJECT_DIR$/src/ClosestQuakes.java" />
         <option value="$PROJECT_DIR$/src/LargestQuakes.java" />
+        <option value="$PROJECT_DIR$/test/LargestQuakesTest.java" />
+        <option value="$PROJECT_DIR$/test/ClosestQuakesTest.java" />
       </list>
     </option>
   </component>
@@ -209,7 +183,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LargestQuakesTest">
+  <component name="RunManager" selected="JUnit.ClosestQuakesTest">
     <configuration name="ClosestQuakesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -461,8 +435,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LargestQuakesTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ClosestQuakesTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ClosestQuakesTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LargestQuakesTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.ClosestQuakesTest.getClosest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest" />
         <item index="4" class="java.lang.String" itemvalue="Application.EarthQuakeParser" />
@@ -494,8 +468,8 @@
     <history-entry file="ClosestQuakesTest - 2018.03.11 at 18h 52m 50s.xml">
       <configuration name="ClosestQuakesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LargestQuakesTest - 2018.03.11 at 18h 43m 18s.xml">
-      <configuration name="LargestQuakesTest" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest - 2018.03.11 at 18h 57m 21s.xml">
+      <configuration name="ClosestQuakesTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LargestQuakesTest - 2018.03.11 at 18h 45m 16s.xml">
       <configuration name="LargestQuakesTest" configurationId="JUnit" />
@@ -531,7 +505,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -684,17 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ClosestQuakesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="69" lean-forward="false" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
-          <folding>
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ClosestQuakes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -715,15 +678,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/ClosestQuakesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/LargestQuakesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding>
             <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#891#903#0" expanded="true" />
-            <element signature="e#1749#1761#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#892#904#0" expanded="true" />
+            <element signature="e#1750#1762#0" expanded="true" />
           </folding>
         </state>
       </provider>
