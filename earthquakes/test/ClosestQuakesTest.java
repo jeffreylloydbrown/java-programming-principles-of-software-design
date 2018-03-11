@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ClosestQuakesTest {
     // assignment values are printed rounded to hundreths.
     private double round (double value) {
-        return (int)(value*100.0 + 0.5)/100.0;
+        return (int)(value*100.0 + ((value >= 0) ? 0.5 : -0.5))/100.0;
     }
 
     @Test
