@@ -3,13 +3,16 @@ import edu.duke.*;
 
 public class EarthQuakeClient {
     public EarthQuakeClient() {
-        // TODO Auto-generated constructor stub
     }
 
-    public ArrayList<QuakeEntry> filterByMagnitude(ArrayList<QuakeEntry> quakeData,
-    double magMin) {
+    public ArrayList<QuakeEntry>
+    filterByMagnitude(ArrayList<QuakeEntry> quakeData, double magMin) {
         ArrayList<QuakeEntry> answer = new ArrayList<QuakeEntry>();
-        // TODO
+        if (quakeData == null || quakeData.isEmpty()) return answer;
+
+        for (QuakeEntry qe : quakeData)
+            if (qe.getMagnitude() >= magMin)
+                answer.add(qe);
 
         return answer;
     }
