@@ -54,7 +54,7 @@ public class ClosestQuakes {
         for(int k=0; k < close.size(); k++){
             QuakeEntry entry = close.get(k);
             double distanceInMeters = jakarta.distanceTo(entry.getLocation());
-            System.out.printf("%4.2f\t %s\n", distanceInMeters/1000,entry);
+            System.out.printf("%4.2fkm\t %s\n", distanceInMeters/1000,entry);
         }
         System.out.println("number found: "+close.size());
     }
