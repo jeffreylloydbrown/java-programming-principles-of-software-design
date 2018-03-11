@@ -73,6 +73,31 @@ class EarthQuakeClientTest {
     }
 
     @Test
+    void filterByPhrase () {
+        EarthQuakeClient e = new EarthQuakeClient();
+        EarthQuakeParser parser = new EarthQuakeParser();
+        String source = "test/data/nov20quakedatasmall.atom";
+        ArrayList<QuakeEntry> list  = parser.read(source);
+        assertEquals(25, list.size());
+
+        // check for null safety
+        assertEquals(0, e.filterByPhrase(new ArrayList<QuakeEntry>(), "start", "Can").size());
+        assertEquals(0, e.filterByPhrase(null, "start", "Can").size());
+        assertEquals(0, e.filterByPhrase(list, "", "Can").size());
+        assertEquals(0, e.filterByPhrase(list, null, "Can").size());
+        assertEquals(0, e.filterByPhrase(list, "start", "").size());
+        assertEquals(0, e.filterByPhrase(list, "start", null).size());
+
+        // incorrect `where` means zero results
+        assertEquals(0, e.filterByPhrase(list, "someplace", "Can").size());
+
+        // from assignment
+        assertEquals(4, e.filterByPhrase(list, "end", "California").size());
+        assertEquals(3, e.filterByPhrase(list, "any", "Can").size());
+        assertEquals(2, e.filterByPhrase(list, "start", "Explosion").size());
+    }
+
+    @Test
     void dumpCSV () {
     }
 

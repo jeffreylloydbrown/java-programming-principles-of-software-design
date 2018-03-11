@@ -48,6 +48,32 @@ public class EarthQuakeClient {
         return answer;
     }
 
+    private boolean
+    phraseMatches (String text, String where, String phrase) {
+        if (where.equals("start"))
+            return text.startsWith(phrase);
+        else if (where.equals("end"))
+            return text.endsWith(phrase);
+        else
+            return text.contains(phrase);
+    }
+
+    public ArrayList<QuakeEntry>
+    filterByPhrase(ArrayList<QuakeEntry> quakeData, String where, String phrase) {
+        ArrayList<QuakeEntry> answer = new ArrayList<QuakeEntry>();
+        // verify parameters
+        if (quakeData == null || quakeData.isEmpty()) return answer;
+        if (where == null || !(where.equals("start") || where.equals("end") || where.equals("any")))
+            return answer;
+        if (phrase == null || phrase.isEmpty()) return answer;
+
+        for (QuakeEntry qe : quakeData)
+            if (phraseMatches(qe.getInfo(), where, phrase))
+                answer.add(qe);
+
+        return answer;
+    }
+
     public void dumpCSV(ArrayList<QuakeEntry> list){
         System.out.println("Latitude,Longitude,Magnitude,Info");
         for(QuakeEntry qe : list){
