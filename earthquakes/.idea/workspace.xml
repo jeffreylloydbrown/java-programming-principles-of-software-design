@@ -25,8 +25,8 @@
       <file leaf-file-name="EarthQuakeClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/EarthQuakeClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="167">
+              <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -76,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -371,6 +371,9 @@
     <history-entry file="EarthQuakeClientTest - 2018.03.11 at 15h 01m 39s.xml">
       <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EarthQuakeClientTest - 2018.03.11 at 15h 02m 42s.xml">
+      <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="EarthQuakeClientTest_filterByMagnitude - 2018.03.11 at 14h 53m 03s.xml">
       <configuration name="EarthQuakeClientTest.filterByMagnitude" configurationId="JUnit" />
     </history-entry>
@@ -379,7 +382,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -536,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EarthQuakeClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="167">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
           <folding />
         </state>
       </provider>
