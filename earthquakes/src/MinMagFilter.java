@@ -14,7 +14,8 @@ public class MinMagFilter implements Filter
     } 
 
     public boolean satisfies(QuakeEntry qe) { 
-        return qe.getMagnitude() >= magMin; 
+        if (qe == null) return false;
+        else return qe.getMagnitude() >= magMin;
     } 
 
 }
