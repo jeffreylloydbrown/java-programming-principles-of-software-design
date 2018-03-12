@@ -15,7 +15,12 @@ public class EarthQuakeClient2 {
         } 
         
         return answer;
-    } 
+    }
+
+    private void showQuakes (ArrayList<QuakeEntry> list) {
+        for (QuakeEntry qe : list)
+            System.out.println(qe);
+    }
 
     public void quakesWithFilter() { 
         EarthQuakeParser parser = new EarthQuakeParser(); 
@@ -24,11 +29,22 @@ public class EarthQuakeClient2 {
         ArrayList<QuakeEntry> list  = parser.read(source);         
         System.out.println("read data for "+list.size()+" quakes");
 
-        Filter f = new MinMagFilter(4.0); 
-        ArrayList<QuakeEntry> m7  = filter(list, f); 
-        for (QuakeEntry qe: m7) { 
-            System.out.println(qe);
-        } 
+        /*
+        Filter f = new MinMagFilter(4.0);
+        ArrayList<QuakeEntry> m7  = filter(list, f);
+        showQuakes(m7);
+        */
+        /*
+        Filter mag = new MagnitudeFilter(4.0, 5.0);
+        Filter depth = new DepthFilter(-35000.0, -12000.0);
+        System.out.println("should see Lagunillas, Venezuela and Ishinomaki, Japan, 2 total");
+        showQuakes(filter(filter(list, mag), depth));
+        */
+        Location tokyo = new Location(35.42, 139.43);
+        Filter within = new DistanceFilter(tokyo, 10000000);
+        Filter phrase = new PhraseFilter("end", "Japan");
+        System.out.println("should see Chichi-shima, Japan and Ishinomaki, Japan, 2 total");
+        showQuakes(filter(filter(list, within), phrase));
     }
 
     public void createCSV() {
