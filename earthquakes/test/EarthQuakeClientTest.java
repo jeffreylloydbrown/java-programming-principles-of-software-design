@@ -141,4 +141,21 @@ class EarthQuakeClientTest {
         System.out.println("quakesByPhrase() complete\n");
     }
 
+    @Test
+    void practiceQuiz () {
+        EarthQuakeClient e = new EarthQuakeClient();
+        EarthQuakeParser parser = new EarthQuakeParser();
+        String source = "test/data/nov20quakedata.atom";
+        ArrayList<QuakeEntry> list  = parser.read(source);
+
+        System.out.println("Q1.  "+e.filterByDepth(list, -8000, -5000).size());
+        System.out.println("Q2.  "+e.filterByPhrase(list, "start", "Explosion").size());
+        System.out.println("Q3.  "+e.filterByPhrase(list, "end", "California").size());
+        System.out.println("Q4.  "+e.filterByPhrase(list, "any", "Creek").size());
+        LargestQuakes lq = new LargestQuakes();
+        ArrayList<QuakeEntry> top = lq.getLargest(list, 5);
+        System.out.printf("Q5.  %4.2f\n", top.get(2).getMagnitude());
+        System.out.println("Q6.  use country from '"+top.get(4).getInfo()+"'");
+    }
+
 }
