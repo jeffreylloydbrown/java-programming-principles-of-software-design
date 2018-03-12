@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbef1b4f-e8bc-47da-9c98-b81bf2c551d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LargestQuakes.java" afterPath="$PROJECT_DIR$/src/LargestQuakes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ClosestQuakesTest.java" afterPath="$PROJECT_DIR$/test/ClosestQuakesTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/LargestQuakesTest.java" afterPath="$PROJECT_DIR$/test/LargestQuakesTest.java" />
-    </list>
+    <list default="true" id="fbef1b4f-e8bc-47da-9c98-b81bf2c551d1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +11,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/earthquakes$EarthQuakeClientTest.coverage" NAME="EarthQuakeClientTest Coverage Results" MODIFIED="1520802676764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/earthquakes$LargestQuakesTest.coverage" NAME="LargestQuakesTest Coverage Results" MODIFIED="1520812820863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ClosestQuakes</FILTER>
+      <FILTER>EarthQuakeClient</FILTER>
+      <FILTER>EarthQuakeParser</FILTER>
+      <FILTER>LargestQuakes</FILTER>
+      <FILTER>QuakeEntry</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/earthquakes$EarthQuakeClientTest.coverage" NAME="EarthQuakeClientTest Coverage Results" MODIFIED="1520812772143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ClosestQuakes</FILTER>
       <FILTER>EarthQuakeClient</FILTER>
       <FILTER>QuakeEntry</FILTER>
@@ -27,7 +30,7 @@
       <FILTER>EarthQuakeParser</FILTER>
       <FILTER>QuakeEntry</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/earthquakes$ClosestQuakesTest.coverage" NAME="ClosestQuakesTest Coverage Results" MODIFIED="1520810345967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/earthquakes$ClosestQuakesTest.coverage" NAME="ClosestQuakesTest Coverage Results" MODIFIED="1520812764358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ClosestQuakes</FILTER>
       <FILTER>EarthQuakeClient</FILTER>
       <FILTER>EarthQuakeParser</FILTER>
@@ -183,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClosestQuakesTest">
+  <component name="RunManager" selected="JUnit.LargestQuakesTest">
     <configuration name="ClosestQuakesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -327,17 +330,38 @@
       <envs />
     </configuration>
     <configuration name="LargestQuakesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ClosestQuakes" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="EarthQuakeClient" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="EarthQuakeParser" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="LargestQuakes" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="QuakeEntry" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="earthquakes" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LargestQuakesTest" />
-      <option name="METHOD_NAME" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -435,10 +459,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ClosestQuakesTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LargestQuakesTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ClosestQuakesTest.getClosest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LargestQuakesTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ClosestQuakesTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ClosestQuakesTest.getClosest" />
         <item index="4" class="java.lang.String" itemvalue="Application.EarthQuakeParser" />
       </list>
     </recent_temporary>
@@ -471,17 +495,11 @@
     <history-entry file="ClosestQuakesTest - 2018.03.11 at 18h 57m 21s.xml">
       <configuration name="ClosestQuakesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LargestQuakesTest - 2018.03.11 at 18h 45m 16s.xml">
-      <configuration name="LargestQuakesTest" configurationId="JUnit" />
+    <history-entry file="ClosestQuakesTest - 2018.03.11 at 18h 59m 26s.xml">
+      <configuration name="ClosestQuakesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LargestQuakesTest - 2018.03.11 at 18h 47m 08s.xml">
-      <configuration name="LargestQuakesTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LargestQuakesTest - 2018.03.11 at 18h 48m 44s.xml">
-      <configuration name="LargestQuakesTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LargestQuakesTest - 2018.03.11 at 18h 49m 41s.xml">
-      <configuration name="LargestQuakesTest" configurationId="JUnit" />
+    <history-entry file="EarthQuakeClientTest - 2018.03.11 at 18h 59m 34s.xml">
+      <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LargestQuakesTest - 2018.03.11 at 18h 50m 39s.xml">
       <configuration name="LargestQuakesTest" configurationId="JUnit" />
@@ -490,6 +508,12 @@
       <configuration name="LargestQuakesTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LargestQuakesTest - 2018.03.11 at 18h 55m 15s.xml">
+      <configuration name="LargestQuakesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LargestQuakesTest - 2018.03.11 at 18h 59m 42s.xml">
+      <configuration name="LargestQuakesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LargestQuakesTest - 2018.03.11 at 19h 00m 22s.xml">
       <configuration name="LargestQuakesTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -507,7 +531,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
