@@ -1,11 +1,19 @@
 public class PhraseFilter implements Filter {
     private String myWhere;
     private String myPhrase;
+    private String myName;
 
-    public PhraseFilter (String where, String phrase) {
+    public PhraseFilter (String where, String phrase) { init(null, where, phrase); }
+
+    public PhraseFilter (String name, String where, String phrase) { init(name, where, phrase); }
+
+    private void init (String name, String where, String phrase) {
         myWhere = where;
         myPhrase = phrase;
+        myName = (name == null || name.isEmpty()) ? "Phrase" : name;
     }
+
+    public String getName() { return myName; }
 
     public boolean satisfies (QuakeEntry qe) {
         if (myWhere == null || !(myWhere.equals("start") || myWhere.equals("any") || myWhere.equals("end")))
