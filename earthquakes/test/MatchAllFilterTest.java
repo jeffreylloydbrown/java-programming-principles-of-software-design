@@ -10,8 +10,21 @@ class MatchAllFilterTest {
     void addFilter () {
         MatchAllFilter maf = new MatchAllFilter();
 
-        // null filters don't kill things.
+        // null filters don't kill things and don't get added to filter list.
         maf.addFilter(null);
+        maf.addFilter(new DepthFilter(10, 20));
+        assertEquals("Depth", maf.getName());
+    }
+
+    @Test
+    void getName () {
+        MatchAllFilter maf = new MatchAllFilter();
+        assertEquals("", maf.getName());
+        maf.addFilter(new PhraseFilter("start", "q"));
+        assertEquals("Phrase", maf.getName());
+        maf.addFilter(new DepthFilter("my depth filter", 10000, 20000));
+        maf.addFilter(new MagnitudeFilter(2,4));
+        assertEquals("Phrase my depth filter Magnitude", maf.getName());
     }
 
     @Test

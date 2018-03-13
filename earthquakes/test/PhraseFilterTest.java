@@ -4,6 +4,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PhraseFilterTest {
     @Test
+    void getName () {
+        assertEquals("Phrase", new PhraseFilter("start", "word").getName());
+        assertEquals("my filter", new PhraseFilter("my filter", "start", "word").getName());
+        assertEquals("Phrase", new PhraseFilter("", "start", "word").getName());
+        assertEquals("Phrase", new PhraseFilter(null, "start", "word").getName());
+    }
+    
+    @Test
     void satisfies () {
         QuakeEntry quake = new QuakeEntry(1.0, 2.0, 3.0, "a test quake", 4.0);
         QuakeEntry emptyInfo = new QuakeEntry(1.0, 2.0, 3.0, "", 4.0);

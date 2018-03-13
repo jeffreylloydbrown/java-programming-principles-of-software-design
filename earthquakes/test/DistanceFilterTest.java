@@ -4,6 +4,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DistanceFilterTest {
     @Test
+    void getName () {
+        Location loc = new Location(1,2);
+        assertEquals("Distance", new DistanceFilter(loc, 100).getName());
+        assertEquals("my filter", new DistanceFilter("my filter", loc, 100).getName());
+        assertEquals("Distance", new DistanceFilter("", loc, 100).getName());
+        assertEquals("Distance", new DistanceFilter(null, loc, 100).getName());
+    }
+    
+    @Test
     void satisfies () {
         Location me = new Location(0.0, 0.0);
         QuakeEntry quake = new QuakeEntry(1.0, 0.0, 0.0, "a quake", 100.0);
