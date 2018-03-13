@@ -51,6 +51,21 @@ public class QuakeSortInPlace {
         
     }
 
+    public void sortByMagnitudeWithCheck(ArrayList<QuakeEntry> in) {
+        int i;
+        for (i=0; i< in.size(); i++) {
+            if (checkInSortedOrder(in))
+                break;
+            int minIdx = getSmallestMagnitude(in,i);
+            QuakeEntry qi = in.get(i);
+            QuakeEntry qmin = in.get(minIdx);
+            in.set(i,qmin);
+            in.set(minIdx,qi);
+        }
+        System.out.println("Passes required = "+i);
+
+    }
+
     public void sortByLargestDepth (ArrayList<QuakeEntry> in) {
         for (int i=0; i< in.size(); i++) {
             int largestIdx = getLargestDepth(in,i);
@@ -61,20 +76,67 @@ public class QuakeSortInPlace {
         }
     }
 
+    public void onePassBubbleSort(ArrayList<QuakeEntry> quakeData, int numSorted) {
+        // sorts element i-1 and i, which is why we start at 1.
+        for (int i = 1; i < quakeData.size() - numSorted; i++) {
+            if (quakeData.get(i-1).getMagnitude() > quakeData.get(i).getMagnitude()) {
+                QuakeEntry temp = quakeData.get(i-1);
+                quakeData.set(i-1, quakeData.get(i));
+                quakeData.set(i, temp);
+            }
+        }
+    }
+
+    private void showList(ArrayList<QuakeEntry> list) {
+        for (QuakeEntry qe : list)
+            System.out.println(qe);
+    }
+
+    public void sortByMagnitudeWithBubbleSort(ArrayList<QuakeEntry> in) {
+        for (int pass = 0; pass < in.size(); pass++) {
+            //System.out.println("Pass "+pass+":");
+            //showList(in);
+            onePassBubbleSort(in, pass);
+        }
+    }
+
+    public boolean checkInSortedOrder(ArrayList<QuakeEntry> quakes) {
+        for (int i = 1; i < quakes.size(); i++)
+            if (quakes.get(i-1).getMagnitude() > quakes.get(i).getMagnitude())
+                return false;
+        return true;
+    }
+
+    public void sortByMagnitudeWithBubbleSortWithCheck(ArrayList<QuakeEntry> in) {
+        int pass;
+        for (pass = 0; pass < in.size(); pass++) {
+            if (checkInSortedOrder(in))
+                break;
+            //System.out.println("Pass "+pass+": ");
+            //showList(in);
+            onePassBubbleSort(in, pass);
+        }
+        System.out.println("required "+pass+" passes: ");
+    }
+
     public void testSort() {
         EarthQuakeParser parser = new EarthQuakeParser(); 
         //String source = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
         String source = "test/data/nov20quakedatasmall.atom";
         //String source = "test/data/nov20quakedata.atom";
+        //String source = "test/data/earthquakeDataSampleSix1.atom";
+        //String source = "test/data/earthquakeDataSampleSix2.atom";
         ArrayList<QuakeEntry> list  = parser.read(source);  
        
         System.out.println("read data for "+list.size()+" quakes");    
         //sortByMagnitude(list);
-        sortByLargestDepth(list);
-        for (QuakeEntry qe: list) { 
-            System.out.println(qe);
-        } 
-        
+        //sortByLargestDepth(list);
+        //sortByMagnitudeWithBubbleSort(list);
+        //sortByMagnitudeWithBubbleSortWithCheck(list);
+        sortByMagnitudeWithCheck(list);
+        System.out.println("sorted list:");
+        showList(list);
+
     }
     
     public void createCSV() {

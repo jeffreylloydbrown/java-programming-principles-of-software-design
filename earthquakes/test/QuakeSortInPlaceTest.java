@@ -8,5 +8,4 @@ class QuakeSortInPlaceTest {
         QuakeSortInPlace qs = new QuakeSortInPlace();
         qs.testSort();
     }
-
 }
