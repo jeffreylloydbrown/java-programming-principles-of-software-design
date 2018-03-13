@@ -22,7 +22,7 @@ public class EarthQuakeParser {
             DocumentBuilder builder = factory.newDocumentBuilder();
 
             //Document document = builder.parse(new File(source));
-            //Document document = builder.parse("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.atom");
+            //Document document = builder.parse("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.atom");
             Document document = null;
 
             if (source.startsWith("http")){
@@ -31,7 +31,7 @@ public class EarthQuakeParser {
             else {
                 document = builder.parse(new File(source));
             }
-            //Document document = builder.parse("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom");
+            //Document document = builder.parse("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom");
 
             NodeList nodeList = document.getDocumentElement().getChildNodes();
 
@@ -101,7 +101,7 @@ public class EarthQuakeParser {
     public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException{
         EarthQuakeParser xp = new EarthQuakeParser();
         //String source = "test/data/2.5_week.atom";
-        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
+        //String source = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
         String source = "test/data/nov20quakedata.atom";
         ArrayList<QuakeEntry> list  = xp.read(source);
         Collections.sort(list);

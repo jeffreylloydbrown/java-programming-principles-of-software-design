@@ -44,7 +44,7 @@ public class ClosestQuakes {
     public void findClosestQuakes() {
         EarthQuakeParser parser = new EarthQuakeParser();
         String source = "test/data/nov20quakedata.atom";
-        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
+        //String source = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
         ArrayList<QuakeEntry> list  = parser.read(source);
         System.out.println("read data for "+list.size());
 
