@@ -69,6 +69,7 @@ class MatchAllFilterTest {
         ArrayList<QuakeEntry> res = ec.filter(list, maf);
         assertEquals(2, res.size());
         showQuakes(res);
+        System.out.println("Filters used are: "+maf.getName());
     }
 
     @Test
