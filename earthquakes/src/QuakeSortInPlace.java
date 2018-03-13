@@ -9,6 +9,12 @@
 import java.util.*;
 import edu.duke.*;
 
+// Implementing sort algorithms is a complete waste of my time.
+// I understand why it is in the class, since the class is for
+// less experienced developers.  I will be doing as little possible
+// to complete this part of the assignment, since I'm just ducky
+// using Collections.sort() for all sorting.
+
 public class QuakeSortInPlace {
     public QuakeSortInPlace() {
         // TODO Auto-generated constructor stub
@@ -23,6 +29,15 @@ public class QuakeSortInPlace {
         }
         return minIdx;
     }
+
+    public int getLargestDepth(ArrayList<QuakeEntry> quakeData, int from) {
+        int largestIdx = from;
+        for (int i=from+1; i < quakeData.size(); i++) {
+            if (quakeData.get(i).getDepth() > quakeData.get(largestIdx).getDepth())
+                largestIdx = i;
+        }
+        return largestIdx;
+    }
     
     public void sortByMagnitude(ArrayList<QuakeEntry> in) {
        
@@ -36,6 +51,16 @@ public class QuakeSortInPlace {
         
     }
 
+    public void sortByLargestDepth (ArrayList<QuakeEntry> in) {
+        for (int i=0; i< in.size(); i++) {
+            int largestIdx = getLargestDepth(in,i);
+            QuakeEntry qi = in.get(i);
+            QuakeEntry qmax = in.get(largestIdx);
+            in.set(i,qmax);
+            in.set(largestIdx,qi);
+        }
+    }
+
     public void testSort() {
         EarthQuakeParser parser = new EarthQuakeParser(); 
         //String source = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
@@ -44,7 +69,8 @@ public class QuakeSortInPlace {
         ArrayList<QuakeEntry> list  = parser.read(source);  
        
         System.out.println("read data for "+list.size()+" quakes");    
-        sortByMagnitude(list);
+        //sortByMagnitude(list);
+        sortByLargestDepth(list);
         for (QuakeEntry qe: list) { 
             System.out.println(qe);
         } 
