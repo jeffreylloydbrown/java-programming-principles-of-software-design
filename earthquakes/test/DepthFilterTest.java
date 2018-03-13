@@ -4,6 +4,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DepthFilterTest {
     @Test
+    void getName () {
+        assertEquals("Depth", new DepthFilter(10,20).getName());
+        assertEquals("my filter", new DepthFilter("my filter", 10,20).getName());
+        assertEquals("Depth", new DepthFilter("", 10, 20).getName());
+        assertEquals("Depth", new DepthFilter(null, 10, 20).getName());
+    }
+
+    @Test
     void satisfies () {
         QuakeEntry pos1 = new QuakeEntry(0.1, 0.2, 0.0, "mag 1", 1.0);
 
