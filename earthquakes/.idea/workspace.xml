@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbef1b4f-e8bc-47da-9c98-b81bf2c551d1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ClosestQuakes.java" afterPath="$PROJECT_DIR$/src/ClosestQuakes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EarthQuakeClient.java" afterPath="$PROJECT_DIR$/src/EarthQuakeClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EarthQuakeClient2.java" afterPath="$PROJECT_DIR$/src/EarthQuakeClient2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EarthQuakeParser.java" afterPath="$PROJECT_DIR$/src/EarthQuakeParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LargestQuakes.java" afterPath="$PROJECT_DIR$/src/LargestQuakes.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,28 +59,7 @@
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LargestQuakesTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/LargestQuakesTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-852">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LargestQuakes.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LargestQuakes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -176,6 +151,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -195,24 +171,17 @@
               <item name="earthquakes" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="earthquakes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="earthquakes" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lib/courserajava.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
   </component>
   <component name="RecentsManager">
@@ -235,76 +204,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LargestQuakesTest.findLargestQuakes">
-    <configuration name="EarthQuakeClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.EarthQuakeParser">
+    <configuration name="EarthQuakeParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="EarthQuakeParser" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="earthquakes" />
+      <envs />
+    </configuration>
+    <configuration name="MagnitudeFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="earthquakes" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EarthQuakeClientTest" />
+      <option name="MAIN_CLASS_NAME" value="MagnitudeFilterTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="EarthQuakeClientTest.quakesOfDepth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="earthquakes" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EarthQuakeClientTest" />
-      <option name="METHOD_NAME" value="quakesOfDepth" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="LargestQuakesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="earthquakes" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LargestQuakesTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="LargestQuakesTest.findLargestQuakes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="earthquakes" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LargestQuakesTest" />
-      <option name="METHOD_NAME" value="findLargestQuakes" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -317,22 +240,57 @@
       <patterns />
     </configuration>
     <configuration name="MatchAllFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="MatchAllFilter" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="earthquakes" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MatchAllFilterTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MinMagFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="earthquakes" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MinMagFilterTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="PhraseFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="earthquakes" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PhraseFilterTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -422,19 +380,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MatchAllFilterTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest.quakesOfDepth" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LargestQuakesTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LargestQuakesTest.findLargestQuakes" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MagnitudeFilterTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MatchAllFilterTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MinMagFilterTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PhraseFilterTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.EarthQuakeParser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LargestQuakesTest.findLargestQuakes" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LargestQuakesTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest.quakesOfDepth" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EarthQuakeClientTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MatchAllFilterTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.EarthQuakeParser" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PhraseFilterTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MinMagFilterTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MatchAllFilterTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MagnitudeFilterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -457,54 +415,54 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EarthQuakeClientTest - 2018.03.12 at 21h 47m 22s.xml">
+    <history-entry file="ClosestQuakesTest - 2018.03.13 at 15h 20m 12s.xml">
+      <configuration name="ClosestQuakesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DepthFilterTest - 2018.03.13 at 15h 20m 19s.xml">
+      <configuration name="DepthFilterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DistanceFilterTest - 2018.03.13 at 15h 20m 24s.xml">
+      <configuration name="DistanceFilterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EarthQuakeClient2Test - 2018.03.13 at 15h 20m 28s.xml">
+      <configuration name="EarthQuakeClient2Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EarthQuakeClientTest - 2018.03.13 at 15h 20m 34s.xml">
       <configuration name="EarthQuakeClientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EarthQuakeClientTest_quakesOfDepth - 2018.03.12 at 21h 47m 54s.xml">
-      <configuration name="EarthQuakeClientTest.quakesOfDepth" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EarthQuakeClientTest_quakesOfDepth - 2018.03.12 at 21h 48m 10s.xml">
-      <configuration name="EarthQuakeClientTest.quakesOfDepth" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LargestQuakesTest - 2018.03.12 at 21h 50m 58s.xml">
+    <history-entry file="LargestQuakesTest - 2018.03.13 at 15h 20m 46s.xml">
       <configuration name="LargestQuakesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LargestQuakesTest_findLargestQuakes - 2018.03.12 at 21h 51m 40s.xml">
-      <configuration name="LargestQuakesTest.findLargestQuakes" configurationId="JUnit" />
+    <history-entry file="MagnitudeFilterTest - 2018.03.13 at 15h 20m 51s.xml">
+      <configuration name="MagnitudeFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MatchAllFilterTest - 2018.03.12 at 19h 58m 25s.xml">
+    <history-entry file="MatchAllFilterTest - 2018.03.13 at 15h 20m 56s.xml">
       <configuration name="MatchAllFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MatchAllFilterTest - 2018.03.12 at 20h 00m 16s.xml">
-      <configuration name="MatchAllFilterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MinMagFilterTest - 2018.03.12 at 19h 53m 17s.xml">
+    <history-entry file="MinMagFilterTest - 2018.03.13 at 15h 21m 00s.xml">
       <configuration name="MinMagFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MinMagFilterTest - 2018.03.12 at 19h 54m 10s.xml">
-      <configuration name="MinMagFilterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PhraseFilterTest - 2018.03.12 at 19h 49m 21s.xml">
+    <history-entry file="PhraseFilterTest - 2018.03.13 at 15h 21m 04s.xml">
       <configuration name="PhraseFilterTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27124184" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2706935" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21393643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -559,6 +517,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/LargestQuakesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LargestQuakes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/DepthFilterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -856,18 +830,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/LargestQuakesTest.java">
+    <entry file="file://$PROJECT_DIR$/src/LargestQuakes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-852">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="554">
+          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LargestQuakes.java">
+    <entry file="file://$PROJECT_DIR$/test/LargestQuakesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="17">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
