@@ -1,4 +1,7 @@
+import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -31,6 +34,46 @@ class MatchAllFilterTest {
         QuakeEntry q2 = new QuakeEntry(0, 0, 0.0, "Explosion - texas", -200); // not Texas
         assertTrue(maf.satisfies(q1));
         assertFalse(maf.satisfies(q2));
+    }
+
+    private void showQuakes (ArrayList<QuakeEntry> list) {
+        for (QuakeEntry qe : list)
+            System.out.println(qe);
+    }
+
+    @Test
+    void testMatchAllFilter () {
+        // from assignment
+        MatchAllFilter maf = new MatchAllFilter();
+        EarthQuakeClient2 ec = new EarthQuakeClient2();
+        EarthQuakeParser parser = new EarthQuakeParser();
+        String source = "test/data/nov20quakedatasmall.atom";
+        ArrayList<QuakeEntry> list  = parser.read(source);
+        System.out.println("read data for " + list.size() + " quakes");
+        maf.addFilter(new MagnitudeFilter(0.0, 2.0));
+        maf.addFilter(new DepthFilter(-100000, -10000));
+        maf.addFilter(new PhraseFilter("any", "a"));
+        ArrayList<QuakeEntry> res = ec.filter(list, maf);
+        assertEquals(2, res.size());
+        showQuakes(res);
+    }
+
+    @Test
+    void testMatchAllFilter2 () {
+        // from assignment
+        MatchAllFilter maf = new MatchAllFilter();
+        EarthQuakeClient2 ec = new EarthQuakeClient2();
+        EarthQuakeParser parser = new EarthQuakeParser();
+        String source = "test/data/nov20quakedatasmall.atom";
+        ArrayList<QuakeEntry> list  = parser.read(source);
+        System.out.println("read data for " + list.size() + " quakes");
+        maf.addFilter(new MagnitudeFilter(0.0, 3.0));
+        Location tulsa = new Location(36.1314, -95.9372);
+        maf.addFilter(new DistanceFilter(tulsa, 10000*1000));
+        maf.addFilter(new PhraseFilter("any", "Ca"));
+        ArrayList<QuakeEntry> res = ec.filter(list, maf);
+        assertEquals(7, res.size());
+        showQuakes(res);
     }
 
 }
