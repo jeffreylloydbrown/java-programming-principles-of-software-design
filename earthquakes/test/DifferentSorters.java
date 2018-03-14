@@ -90,4 +90,35 @@ public class DifferentSorters {
         assertTrue(td.compare(new QuakeEntry(1, 2, 3, q2.getInfo(), q2.getDepth()-0.1), q2) < 0);
         assertTrue(td.compare(new QuakeEntry(1, 2, 3, q2.getInfo(), q2.getDepth()+0.1), q2) > 0);
     }
+
+    @Test
+    public void sortByLastWordInTitleThenByMagnitude() {
+
+        EarthQuakeParser parser = new EarthQuakeParser();
+        String source = "test/data/nov20quakedata.atom";
+        //String source = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
+        ArrayList<QuakeEntry> list  = parser.read(source);
+        Collections.sort(list, new TitleLastAndMagnitudeComparator());
+        for(QuakeEntry qe: list) {
+            System.out.println(qe);
+        }
+
+        // entry 10 in nov20quakedata.atom
+        // (64.47, -149.48), mag = 0.40, depth = -16300.00, title = 21km WSW of North Nenana, Alaska
+        QuakeEntry actual = list.get(10);
+        System.out.println("Quake at position 10 is "+actual);
+
+        // additional null safety checks
+        QuakeEntry nullInfo = new QuakeEntry(1, 2, 3, null, 4);
+        QuakeEntry q2 = new QuakeEntry(1, 2, 3, "  \t\n \t\n", 4);
+        TitleLastAndMagnitudeComparator td = new TitleLastAndMagnitudeComparator();
+        assertTrue(td.compare(nullInfo, q2) < 0);
+        assertTrue(td.compare(q2, nullInfo) > 0);
+        assertTrue(td.compare(nullInfo, nullInfo) == 0);
+        assertTrue(td.compare(q2, q2) == 0);
+
+        // make sure magnitude sort is correct when titles match
+        assertTrue(td.compare(new QuakeEntry(1, 2, q2.getMagnitude()-0.1, q2.getInfo(), 4), q2) < 0);
+        assertTrue(td.compare(new QuakeEntry(1, 2, q2.getMagnitude()+0.1, q2.getInfo(), 4), q2) > 0);
+    }
 }
