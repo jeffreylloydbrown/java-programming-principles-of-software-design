@@ -35,8 +35,13 @@ class QuakeEntryTest {
     @Test
     void compareTo () {
         assertTrue(quake.compareTo(quake) == 0);
+        assertTrue(quake.compareTo(new QuakeEntry(latitude, longitude, magnitude, title, depth)) == 0);
         assertTrue(quake.compareTo(new QuakeEntry(latitude, longitude, magnitude-0.1, title, depth)) > 0);
         assertTrue(quake.compareTo(new QuakeEntry(latitude, longitude, magnitude+0.1, title, depth)) < 0);
+
+        // same magnitudes, different depths
+        assertTrue(quake.compareTo(new QuakeEntry(latitude, longitude, magnitude, title, depth-0.1)) > 0);
+        assertTrue(quake.compareTo(new QuakeEntry(latitude, longitude, magnitude, title, depth+0.1)) < 0);
     }
 
     @Test
