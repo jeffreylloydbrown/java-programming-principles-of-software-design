@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fbef1b4f-e8bc-47da-9c98-b81bf2c551d1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/QuakeSortInPlace.java" afterPath="$PROJECT_DIR$/src/QuakeSortInPlace.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/QuakeSortInPlaceTest.java" afterPath="$PROJECT_DIR$/test/QuakeSortInPlaceTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,6 +35,9 @@
     <SUITE FILE_PATH="coverage/earthquakes$MinMagFilterTest.coverage" NAME="MinMagFilterTest Coverage Results" MODIFIED="1520902449137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>MinMagFilter</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/earthquakes$QuakeEntryTest.coverage" NAME="QuakeEntryTest Coverage Results" MODIFIED="1521048014217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>QuakeEntry</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/earthquakes$EarthQuakeParser.coverage" NAME="EarthQuakeParser Coverage Results" MODIFIED="1520802612845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ClosestQuakes</FILTER>
       <FILTER>EarthQuakeClient</FILTER>
@@ -61,12 +62,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QuakeSortInPlace.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuakeSortInPlace.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/QuakeSortInPlace.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
               <caret line="124" column="8" lean-forward="false" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuakeEntry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/QuakeEntry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuakeEntryTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/QuakeEntryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="38" column="106" lean-forward="false" selection-start-line="38" selection-start-column="106" selection-end-line="38" selection-end-column="106" />
+              <folding>
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#747#748#0" expanded="true" />
+                <element signature="e#781#782#0" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,6 +178,7 @@
         <option value="$PROJECT_DIR$/test/QuakeSortWithTwoArrayListsTest.java" />
         <option value="$PROJECT_DIR$/test/QuakeSortInPlaceTest.java" />
         <option value="$PROJECT_DIR$/src/QuakeSortInPlace.java" />
+        <option value="$PROJECT_DIR$/test/QuakeEntryTest.java" />
       </list>
     </option>
   </component>
@@ -175,10 +204,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,6 +228,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,6 +240,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -229,7 +261,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.QuakeSortInPlaceTest.testSort">
+  <component name="RunManager" selected="JUnit.QuakeEntryTest">
+    <configuration name="QuakeEntryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="QuakeEntry" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="earthquakes" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QuakeEntryTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="QuakeSortInPlaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="earthquakes" />
@@ -299,26 +356,6 @@
       <option name="MAIN_CLASS_NAME" value="QuakeSortInPlaceTest" />
       <option name="METHOD_NAME" value="withCheck" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="QuakeSortWithTwoArrayListsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="earthquakes" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QuakeSortWithTwoArrayListsTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -411,19 +448,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.QuakeSortWithTwoArrayListsTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.testSort" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.tryIt" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.withCheck" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.testSort" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.tryIt" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.withCheck" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.QuakeEntryTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.testSort" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.withCheck" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.tryIt" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.QuakeSortWithTwoArrayListsTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.QuakeEntryTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.testSort" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.withCheck" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.QuakeSortInPlaceTest.tryIt" />
       </list>
     </recent_temporary>
   </component>
@@ -446,20 +483,20 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QuakeSortInPlaceTest_testSort - 2018.03.13 at 16h 32m 58s.xml">
-      <configuration name="QuakeSortInPlaceTest.testSort" configurationId="JUnit" />
+    <history-entry file="QuakeEntryTest - 2018.03.14 at 12h 15m 09s.xml">
+      <configuration name="QuakeEntryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuakeSortInPlaceTest_testSort - 2018.03.13 at 16h 39m 03s.xml">
-      <configuration name="QuakeSortInPlaceTest.testSort" configurationId="JUnit" />
+    <history-entry file="QuakeEntryTest - 2018.03.14 at 12h 16m 11s.xml">
+      <configuration name="QuakeEntryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuakeSortInPlaceTest_testSort - 2018.03.13 at 16h 39m 32s.xml">
-      <configuration name="QuakeSortInPlaceTest.testSort" configurationId="JUnit" />
+    <history-entry file="QuakeEntryTest - 2018.03.14 at 12h 16m 42s.xml">
+      <configuration name="QuakeEntryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuakeSortInPlaceTest_testSort - 2018.03.13 at 16h 41m 04s.xml">
-      <configuration name="QuakeSortInPlaceTest.testSort" configurationId="JUnit" />
+    <history-entry file="QuakeEntryTest - 2018.03.14 at 12h 18m 48s.xml">
+      <configuration name="QuakeEntryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuakeSortInPlaceTest_testSort - 2018.03.13 at 16h 42m 27s.xml">
-      <configuration name="QuakeSortInPlaceTest.testSort" configurationId="JUnit" />
+    <history-entry file="QuakeEntryTest - 2018.03.14 at 12h 20m 15s.xml">
+      <configuration name="QuakeEntryTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="QuakeSortInPlaceTest_testSort - 2018.03.13 at 16h 42m 54s.xml">
       <configuration name="QuakeSortInPlaceTest.testSort" configurationId="JUnit" />
@@ -478,23 +515,24 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2706935" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26960784" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21393643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -506,7 +544,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -549,6 +586,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/QuakeSortInPlace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/QuakeSortInPlaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/LargestQuakesTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -661,23 +714,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/data/nov20quakedatasmall.atom">
+      <provider editor-type-id="apk-viewer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="apk-viewer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/data/nov20quakedata.atom">
+      <provider editor-type-id="apk-viewer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="apk-viewer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Location.java">
@@ -685,13 +738,6 @@
         <state relative-caret-position="-9">
           <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuakeEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -878,22 +924,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuakeSortWithTwoArrayLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/QuakeSortWithTwoArrayListsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuakeSortWithTwoArrayLists.java" />
+    <entry file="file://$PROJECT_DIR$/test/QuakeSortWithTwoArrayListsTest.java" />
     <entry file="file://$PROJECT_DIR$/test/QuakeSortInPlaceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -907,6 +939,29 @@
         <state relative-caret-position="108">
           <caret line="124" column="8" lean-forward="false" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuakeEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/QuakeEntryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="38" column="106" lean-forward="false" selection-start-line="38" selection-start-column="106" selection-end-line="38" selection-end-column="106" />
+          <folding>
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
