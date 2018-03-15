@@ -28,7 +28,7 @@ public class MarkovWordOne implements IMarkovModel {
 	public String getRandomText(int numWords){
 		StringBuilder sb = new StringBuilder();
 		int index = myRandom.nextInt(myText.length-1);  // random word to start with
-		String key = myText[index];
+		String key = myText[index];  // random word of unpredictable length.  So must always check lengths.
 		sb.append(key);
 		sb.append(" ");
 		for(int k=0; k < numWords-1; k++){
@@ -40,7 +40,7 @@ public class MarkovWordOne implements IMarkovModel {
 			String next = follows.get(index);
 			sb.append(next);
 			sb.append(" ");
-			key = next;
+			key = next;  // this is wrong.  should be something like key=key.substring(1)+next but for words.  perhaps substring(next.length())?
 		}
 		
 		return sb.toString().trim();

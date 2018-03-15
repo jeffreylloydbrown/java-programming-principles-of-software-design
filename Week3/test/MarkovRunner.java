@@ -29,6 +29,13 @@ class MarkovRunner {
         FileResource fr = new FileResource();
         String st = fr.asString();
         st = st.replace('\n', ' ');
+
+        MarkovTwo markov = new MarkovTwo();
+        markov.setTraining(st);
+        for(int k=0; k < 3; k++){
+            String res = markov.getRandomText(500);
+            printOut(res);
+        }
         //MarkovWordOne markovWord = new MarkovWordOne();
         //runModel(markovWord, st, 200);
     }
