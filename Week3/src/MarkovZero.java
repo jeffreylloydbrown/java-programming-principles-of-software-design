@@ -14,6 +14,7 @@ public class MarkovZero {
 	
 	public MarkovZero() {
 		myRandom = new Random();
+		myText = "";  // no frickin' nulls
 	}
 	
 	public void setRandom(int seed){
@@ -25,9 +26,7 @@ public class MarkovZero {
 	}
 	
 	public String getRandomText(int numChars){
-		if (myText == null){
-			return "";
-		}
+
 		StringBuilder sb = new StringBuilder();
 		for(int k=0; k < numChars; k++){
 			int index = myRandom.nextInt(myText.length());
