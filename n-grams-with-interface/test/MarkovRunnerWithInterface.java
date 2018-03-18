@@ -6,12 +6,17 @@ import static org.junit.jupiter.api.Assertions.*;
 class MarkovRunnerWithInterface {
 
     private void runModel(IMarkovModel markov, String text, int size) {
+        long start = System.nanoTime();
+
         markov.setTraining(text);
         System.out.println("running with " + markov);
         for(int k=0; k < 3; k++){
             String st= markov.getRandomText(size);
             printOut(st);
         }
+
+        long end = System.nanoTime();
+        System.out.println("run with "+markov.toString()+" took "+(end-start)/1000000000.0+" seconds");
     }
 
     private void runModel(IMarkovModel markov, String text, int size, int seed){
@@ -37,6 +42,27 @@ class MarkovRunnerWithInterface {
 
         MarkovFour mFour = new MarkovFour();
         runModel(mFour, st, size);
+    }
+
+    @Test
+    void testHashMap () {
+        EfficientMarkovModel e = new EfficientMarkovModel(2);
+        e.setRandom(42);
+        e.setTraining("yes-this-is-a-thin-pretty-pink-thistle");
+        e.printHashMapInfo();
+    }
+
+    @Test
+    void compareMethods() {
+        int order = 2;
+        int seed = 42;
+        int outputLen = 1000;
+        FileResource fr = new FileResource("../data/hawthorne.txt");
+        MarkovModel m = new MarkovModel(order);
+        EfficientMarkovModel e = new EfficientMarkovModel(order);
+
+        runModel(m, fr.asString(), outputLen, seed);
+        runModel(e, fr.asString(), outputLen, seed);
     }
 
     private void printOut(String s){
