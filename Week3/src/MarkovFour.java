@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class MarkovTwo {
-    private int markovOrder = 2;
+public class MarkovFour {
+    private int markovOrder = 4;
     private String myText;
     private Random myRandom;
 
-    public MarkovTwo() {
+    public MarkovFour () {
         myRandom = new Random();
         myText = "";  // no frickin' nulls
     }
