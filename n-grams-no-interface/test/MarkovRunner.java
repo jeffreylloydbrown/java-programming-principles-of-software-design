@@ -42,7 +42,7 @@ class MarkovRunner {
 
     @Test
     public void runMarkovZero() {
-        FileResource fr = new FileResource("src/data/romeo.txt");
+        FileResource fr = new FileResource("../data/romeo.txt");
         String st = fr.asString();
         st = st.replace('\n', ' ');
 
@@ -57,7 +57,7 @@ class MarkovRunner {
 
     @Test
     public void runMarkovOne() {
-        FileResource fr = new FileResource("src/data/confucius.txt");
+        FileResource fr = new FileResource("../data/confucius.txt");
         String st = fr.asString();
         st = st.replace('\n', ' ');
 
@@ -71,7 +71,7 @@ class MarkovRunner {
 
     @Test
     public void runMarkovFour() {
-        FileResource fr = new FileResource("src/data/confucius.txt");
+        FileResource fr = new FileResource("../data/confucius.txt");
         String st = fr.asString();
         st = st.replace('\n', ' ');
 
@@ -85,7 +85,7 @@ class MarkovRunner {
 
     @Test
     public void runMarkovModel() {
-        FileResource fr = new FileResource("src/data/confucius.txt");
+        FileResource fr = new FileResource("../data/confucius.txt");
         String st = fr.asString();
         st = st.replace('\n', ' ');
 
