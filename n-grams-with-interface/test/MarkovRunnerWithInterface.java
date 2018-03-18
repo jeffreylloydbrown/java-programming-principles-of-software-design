@@ -19,9 +19,8 @@ class MarkovRunnerWithInterface {
         runModel(markov, text, size);
     }
 
+    @Test
     public void runMarkov() {
-        assertTrue(false, "Must uncommment code once classes created");
-        /*  remove this comment when ready.
         FileResource fr = new FileResource();
         String st = fr.asString();
         st = st.replace('\n', ' ');
@@ -38,7 +37,6 @@ class MarkovRunnerWithInterface {
 
         MarkovFour mFour = new MarkovFour();
         runModel(mFour, st, size);
-        remove this comment when ready */
     }
 
     private void printOut(String s){

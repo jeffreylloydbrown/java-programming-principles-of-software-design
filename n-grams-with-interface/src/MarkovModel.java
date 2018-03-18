@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class MarkovModel {
+public class MarkovModel implements IMarkovModel {
     private int markovOrder;
     private String myText;
     private Random myRandom;

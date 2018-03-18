@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class MarkovFour {
+public class MarkovFour implements IMarkovModel {
     private int markovOrder = 4;
     private String myText;
     private Random myRandom;
