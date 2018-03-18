@@ -8,23 +8,14 @@
 
 import java.util.Random;
 
-public class MarkovZero implements IMarkovModel {
-    private String myText;
-	private Random myRandom;
-	
+public class MarkovZero extends AbstractMarkovModel {
+
 	public MarkovZero() {
+		markovOrder = 0;
 		myRandom = new Random();
 		myText = "";  // no frickin' nulls
 	}
-	
-	public void setRandom(int seed){
-		myRandom = new Random(seed);
-	}
-	
-	public void setTraining(String s){
-		if (s != null && ! s.isEmpty()) myText = s.trim();
-	}
-	
+
 	public String getRandomText(int numChars){
 
 		StringBuilder sb = new StringBuilder();

@@ -1,23 +1,12 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class MarkovModel implements IMarkovModel {
-    private int markovOrder;
-    private String myText;
-    private Random myRandom;
+public class MarkovModel extends AbstractMarkovModel {
 
     public MarkovModel (int order) {
         markovOrder = order;
         myRandom = new Random();
         myText = "";  // no frickin' nulls
-    }
-
-    public void setRandom(int seed){
-        myRandom = new Random(seed);
-    }
-
-    public void setTraining(String s){
-        if (s != null && ! s.isEmpty()) myText = s.trim();
     }
 
     public String getRandomText(int numChars){
@@ -56,22 +45,4 @@ public class MarkovModel implements IMarkovModel {
         return sb.toString();
     }
 
-    // For every occurence of the string `key` in `myText`, add the character after
-    // it to `follows`.  Do it as a string though to make future generalization easier.
-    private ArrayList<String> getFollows(String key) {
-        ArrayList<String> follows = new ArrayList<String>();
-        int pos = 0;
-        while (pos < myText.length()) {
-            int start = myText.indexOf(key, pos);
-            if (start == -1)
-                break;
-            if (start + key.length()+1 > myText.length())
-                break;
-            String next = myText.substring(start+key.length(), start+key.length()+1);
-            follows.add(next);
-            pos = start+key.length();
-        }
-
-        return follows;
-    }
 }
