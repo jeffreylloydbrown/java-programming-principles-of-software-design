@@ -3,26 +3,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MarkovRunner {
-    @Test
-    public void runModel(IMarkovModel markov, String text, int size){
-        markov.setTraining(text);
-        System.out.println("running with " + markov);
-        for(int k=0; k < 3; k++){
-            String st = markov.getRandomText(size);
-            printOut(st);
-        }
-    }
-
-    @Test
-    public void runModel(IMarkovModel markov, String text, int size, int seed){
-        markov.setTraining(text);
-        markov.setRandom(seed);
-        System.out.println("running with " + markov);
-        for(int k=0; k < 3; k++){
-            String st = markov.getRandomText(size);
-            printOut(st);
-        }
-    }
 
     @Test
     public void runMarkov() {
