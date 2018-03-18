@@ -6,17 +6,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class MarkovRunnerWithInterface {
 
     private void runModel(IMarkovModel markov, String text, int size) {
-        long start = System.nanoTime();
-
         markov.setTraining(text);
         System.out.println("running with " + markov);
         for(int k=0; k < 3; k++){
             String st= markov.getRandomText(size);
             printOut(st);
         }
-
-        long end = System.nanoTime();
-        System.out.println("run with "+markov.toString()+" took "+(end-start)/1000000000.0+" seconds");
     }
 
     private void runModel(IMarkovModel markov, String text, int size, int seed){
@@ -61,8 +56,14 @@ class MarkovRunnerWithInterface {
         MarkovModel m = new MarkovModel(order);
         EfficientMarkovModel e = new EfficientMarkovModel(order);
 
+        long start = System.nanoTime();
         runModel(m, fr.asString(), outputLen, seed);
+        long end = System.nanoTime();
+        System.out.println(m.toString()+" took "+(end-start)/1000000000.0+" seconds");
+        start = System.nanoTime();
         runModel(e, fr.asString(), outputLen, seed);
+        end = System.nanoTime();
+        System.out.println(m.toString()+" took "+(end-start)/1000000000.0+" seconds");
     }
 
     private void printOut(String s){
@@ -78,6 +79,19 @@ class MarkovRunnerWithInterface {
             }
         }
         System.out.println("\n----------------------------------");
+    }
+
+    @Test
+    void practiceQuiz () {
+        FileResource fr = new FileResource("../data/romeo.txt");
+        String st = fr.asString();
+        st = st.replace('\n', ' ');
+        EfficientMarkovModel e = new EfficientMarkovModel(5);
+        e.setRandom(615);
+        e.setTraining(st);
+        e.printHashMapInfo();
+        // practicq quiz says 41309 is correct key count.  That's what I got.
+        // practice quiz says largest array of 3174 is not correct.  don't know why.
     }
 
 }

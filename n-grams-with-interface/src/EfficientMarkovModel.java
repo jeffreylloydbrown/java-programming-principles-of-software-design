@@ -103,7 +103,7 @@ public class EfficientMarkovModel extends AbstractMarkovModel {
         System.out.println("keys of that size:");
         for (String key : followsMap.keySet()) {
             if (biggest == followsMap.get(key).size())
-                System.out.println(key);
+                System.out.println("'"+key+"'");
         }
         System.out.println("==============");
     }
