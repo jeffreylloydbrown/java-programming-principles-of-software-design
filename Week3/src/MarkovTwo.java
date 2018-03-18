@@ -8,6 +8,7 @@ public class MarkovTwo {
 
     public MarkovTwo() {
         myRandom = new Random();
+        myText = "";  // no frickin' nulls
     }
 
     public void setRandom(int seed){
@@ -19,9 +20,7 @@ public class MarkovTwo {
     }
 
     public String getRandomText(int numChars){
-        if (myText == null){
-            return "";
-        }
+
         StringBuilder sb = new StringBuilder();
         // Exclude the last `markovOrder` characters from the possible indices,
         // because if they occur at the end of the string, there won't be a following
@@ -65,11 +64,11 @@ public class MarkovTwo {
             int start = myText.indexOf(key, pos);
             if (start == -1)
                 break;
-            if (start + key.length()+1 >= myText.length())
+            if (start + key.length()+1 > myText.length())
                 break;
             String next = myText.substring(start+key.length(), start+key.length()+1);
             follows.add(next);
-            pos = start+key.length()+1;
+            pos = start+key.length();
         }
 
         return follows;
