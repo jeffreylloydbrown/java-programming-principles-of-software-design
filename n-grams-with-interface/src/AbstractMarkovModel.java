@@ -13,6 +13,7 @@ public abstract class AbstractMarkovModel implements IMarkovModel {
     protected Random myRandom;
     
     public AbstractMarkovModel() {
+        myText = "";    // no frickin' nulls
         myRandom = new Random();
     }
     
