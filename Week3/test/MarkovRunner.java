@@ -33,7 +33,7 @@ class MarkovRunner {
         MarkovTwo markov = new MarkovTwo();
         markov.setTraining(st);
         for(int k=0; k < 3; k++){
-            String res = markov.getRandomText(500);
+            String res = markov.getRandomText(200);
             printOut(res);
         }
         //MarkovWordOne markovWord = new MarkovWordOne();
@@ -41,6 +41,35 @@ class MarkovRunner {
     }
 
     @Test
+    public void runMarkovZero() {
+        FileResource fr = new FileResource("src/data/romeo.txt");
+        String st = fr.asString();
+        st = st.replace('\n', ' ');
+
+        MarkovZero markov = new MarkovZero();
+        markov.setTraining(st);
+        markov.setRandom(101);
+        for(int k=0; k < 1; k++){
+            String res = markov.getRandomText(200);
+            printOut(res);
+        }
+    }
+
+    @Test
+    public void runMarkovOne() {
+        FileResource fr = new FileResource("src/data/romeo.txt");
+        String st = fr.asString();
+        st = st.replace('\n', ' ');
+
+        MarkovOne markov = new MarkovOne();
+        markov.setTraining(st);
+        markov.setRandom(101);
+        for(int k=0; k < 1; k++){
+            String res = markov.getRandomText(200);
+            printOut(res);
+        }
+    }
+
     private void printOut(String s){
         String[] words = s.split("\\s+");
         int psize = 0;
