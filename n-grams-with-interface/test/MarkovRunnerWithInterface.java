@@ -82,6 +82,39 @@ class MarkovRunnerWithInterface {
     }
 
     @Test
+    void driveIndexOf () {
+        MarkovWordOne markov = new MarkovWordOne();
+        markov.testIndexOf();
+    }
+
+    @Test
+    void driveGetRandomText () {
+        String st = "this is just a test yes this is a simple test";
+        //String st = "test test test test";
+        MarkovWordOne markov = new MarkovWordOne();
+        markov.setTraining(st);
+        markov.getRandomText(2);
+    }
+
+    @Test
+    void runMarkovWord () {
+        FileResource fr = new FileResource("../data/confucius.txt");
+        String st = fr.asString();
+        st = st.replace('\n', ' ');
+        int size = 120;
+        int seed = 175;
+
+        // Expected output:
+        // teacher. 12. He that his doings from the free distribution of
+        //Ling, the people by learning; then those over with this or hate
+        //daring and hates his muttering a belief in war. He refused all
+        //likelihood, between men. Fan Ch'ih did not go with you? The Master
+        //said, At his best pupil, who notifies you may ignore propriety;
+        MarkovWordOne one = new MarkovWordOne();
+        runModel(one, st, size, seed);
+    }
+
+    @Test
     void practiceQuiz () {
         FileResource fr = new FileResource("../data/romeo.txt");
         String st = fr.asString();
