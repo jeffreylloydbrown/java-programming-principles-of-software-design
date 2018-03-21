@@ -125,6 +125,7 @@ class MarkovRunnerWithInterface {
 
     @Test
     void practiceQuiz () {
+        /*
         FileResource fr = new FileResource("../data/romeo.txt");
         String st = fr.asString();
         st = st.replace('\n', ' ');
@@ -134,6 +135,14 @@ class MarkovRunnerWithInterface {
         e.printHashMapInfo();
         // practicq quiz says 41309 is correct key count.  That's what I got.
         // practice quiz says largest array of 3174 is not correct.  don't know why.
+        */
+        FileResource fr = new FileResource("../data/confucius.txt");
+        String st = fr.asString();
+        st = st.replace('\n', ' ');
+        //MarkovWordOne one = new MarkovWordOne();
+        //runModel(one, st, 80, 139);
+        MarkovWordTwo two = new MarkovWordTwo();
+        runModel(two, st, 80, 832);
     }
 
 }
