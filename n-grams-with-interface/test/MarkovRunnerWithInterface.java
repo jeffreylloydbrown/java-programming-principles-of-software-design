@@ -83,17 +83,21 @@ class MarkovRunnerWithInterface {
 
     @Test
     void driveIndexOf () {
-        MarkovWordOne markov = new MarkovWordOne();
-        markov.testIndexOf();
+        MarkovWordOne one = new MarkovWordOne();
+        System.out.println(one);
+        one.testIndexOf();
+        MarkovWordTwo two = new MarkovWordTwo();
+        System.out.println(two);
+        two.testIndexOf();
     }
 
     @Test
     void driveGetRandomText () {
         String st = "this is just a test yes this is a simple test";
         //String st = "test test test test";
-        MarkovWordOne markov = new MarkovWordOne();
+        MarkovWordTwo markov = new MarkovWordTwo();
         markov.setTraining(st);
-        markov.getRandomText(2);
+        markov.getRandomText(10);
     }
 
     @Test
@@ -112,6 +116,11 @@ class MarkovRunnerWithInterface {
         //said, At his best pupil, who notifies you may ignore propriety;
         MarkovWordOne one = new MarkovWordOne();
         runModel(one, st, size, seed);
+
+        // Expected first line:
+        // the minister know me? Because I was not so great; xix. 21, says
+        MarkovWordTwo two = new MarkovWordTwo();
+        runModel(two, st, size, 549);
     }
 
     @Test
