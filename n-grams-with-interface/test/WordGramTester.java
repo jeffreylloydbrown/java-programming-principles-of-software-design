@@ -18,6 +18,15 @@ class WordGramTester {
         }
     }
 
+    @Test
+    public void testHashCode() {
+        String[] words = new String[2];
+        words[0] = "word";
+        words[1] = "listing";
+        WordGram wg = new WordGram(words, 0, words.length);
+        assertEquals("word listing".hashCode(), wg.hashCode());
+    }
+
     private void confirmBadSource(String[] s) {
         try {
             WordGram wg = new WordGram(s, 0, 2);  // can't use s.length if testing s is null.
@@ -33,6 +42,17 @@ class WordGramTester {
     public void testBadSource() {
         confirmBadSource(null);
         confirmBadSource(new String[0]);
+    }
+
+    @Test
+    public void testNullEmptyWords() {
+        String[] words = new String[5];
+        words[0] = "hello";
+        words[1] = "";
+        words[2] = "there";
+        words[3] = null;
+        words[4] = "done";
+        WordGram wg = new WordGram(words, 0, words.length);
     }
 
     private void confirmBadStart(int start) {
@@ -71,6 +91,7 @@ class WordGramTester {
     public void testInvalidSize() {
         confirmBadSize(-1);
         confirmBadSize(0);
+        confirmBadSize(15);
     }
 
     private void confirmBadIndex(WordGram wg, int index) {
@@ -131,4 +152,25 @@ class WordGramTester {
         }
     }
 
+    @Test
+    public void testShiftAdd() {
+        String source = "this is a test this is a test this is a test of words";
+        String[] words = source.split("\\s+");
+        WordGram start = new WordGram(words, 1, 3);
+        assertEquals("is a test", start.toString());
+
+        WordGram wg = start.shiftAdd("yes");
+        assertEquals("a test yes", wg.toString());
+        assertEquals("is a test", start.toString());
+
+        wg = start.shiftAdd("");
+        assertEquals("a test", wg.toString());
+        assertEquals(start.length(), wg.length());
+        assertEquals("is a test", start.toString());
+
+        wg = start.shiftAdd(null);
+        assertEquals("a test", wg.toString());
+        assertEquals(start.length(), wg.length());
+        assertEquals("is a test", start.toString());
+    }
 }

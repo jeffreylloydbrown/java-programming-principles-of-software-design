@@ -1,5 +1,3 @@
-import com.sun.javaws.exceptions.InvalidArgumentException;
-
 import java.security.InvalidParameterException;
 
 public class WordGram {
@@ -10,13 +8,19 @@ public class WordGram {
         if (source == null || source.length == 0)
             throw new InvalidParameterException("`source` is null or empty");
         if (start < 0 || start > source.length)
-            throw new InvalidParameterException("`source` of size "+source.length+" is too small for index `start`: "+start);
+            throw new InvalidParameterException("`source` of size "+source.length+" isn't indexable by `start`: "+start);
         if (size <= 0)
             throw new InvalidParameterException("size must be positive: "+size);
+        if (start+size > source.length)
+            throw new InvalidParameterException("`start` of "+start+"+ `size` of "+ size +
+                                                " must be <= `source` length of "+source.length);
 
         myWords = new String[size];
         System.arraycopy(source, start, myWords, 0, size);
+        myHash = toString().hashCode();
     }
+
+    public int hashCode() { return myHash; }
 
     public String wordAt(int index) {
         if (index < 0 || index >= myWords.length) {
@@ -32,7 +36,7 @@ public class WordGram {
     public String toString(){
         StringBuilder sb = new StringBuilder();
         for (String word : myWords)
-            sb.append(word+" ");
+            sb.append(word).append(" ");
         // remember to remove the trailing space.
         return sb.toString().trim();
     }
@@ -57,10 +61,9 @@ public class WordGram {
         // empty string.  No NULLS!  Don't have to test here for empty then.
         if (word == null) word = "";
 
-        // shift all words one towards 0 and add word at the end. 
+        // shift all words one spot towards 0 and add word at the end.
         // you lose the first word
-        for (int k = 0; k < out.myWords.length - 1; k++)
-            out.myWords[k] = out.myWords[k+1];
+        System.arraycopy(out.myWords, 1, out.myWords, 0, out.myWords.length-1);
         out.myWords[out.myWords.length-1] = word;
 
         return out;
