@@ -98,12 +98,12 @@ class MarkovRunnerWithInterface {
     void driveGetRandomText () {
         String st = "this is just a test yes this is a simple test";
         //String st = "test test test test";
-    /*
+
         MarkovWordTwo markov = new MarkovWordTwo();
         markov.setTraining(st);
         System.out.println(markov);
         System.out.println(markov.getRandomText(10));
-     */
+
         MarkovWord mw = new MarkovWord(3);
         mw.setTraining(st);
         System.out.println(mw);

@@ -50,7 +50,7 @@ public class MarkovWord implements IMarkovModel {
 
         for(int k=0; k < numWords-myOrder; k++){
             ArrayList<String> follows = getFollows(key);
-            System.out.println(key+": "+follows);
+            //System.out.println(key+": "+follows);
             if (follows.size() == 0) {
                 break;
             }
@@ -70,6 +70,10 @@ public class MarkovWord implements IMarkovModel {
     // position from start that has words in the array words that match the WordGram target.
     // If there is no such match then return -1.
     private int indexOf (String[] words, WordGram target, int start) {
+        // the loop check subtracts off the length of `target` because
+        // if we are closer than that to the end, we cannot possible match.
+        // it uses <= so that a target that happens to be at the very end
+        // of `words` gets found instead of skipped.
         for (int k = start; k <= words.length-target.length(); k++) {
             WordGram wg = new WordGram(words, k, target.length());
             if (wg.equals(target))
