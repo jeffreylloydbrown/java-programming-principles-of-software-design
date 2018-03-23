@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48aa4239-51b5-4daa-90d5-97166b8867ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MarkovWord.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WordGram.java" afterPath="$PROJECT_DIR$/src/WordGram.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MarkovWord.java" afterPath="$PROJECT_DIR$/src/MarkovWord.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/MarkovRunnerWithInterface.java" afterPath="$PROJECT_DIR$/test/MarkovRunnerWithInterface.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MarkovRunnerWithInterface.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MarkovRunnerWithInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/MarkovRunnerWithInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="84" column="12" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="21" />
+            <state relative-caret-position="179">
+              <caret line="84" column="15" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -40,22 +40,43 @@
         <entry file="file://$PROJECT_DIR$/src/WordGram.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#1250#1251#0" expanded="true" />
+                <element signature="e#1287#1288#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarkovWord.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MarkovWord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="93" column="40" lean-forward="false" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+              <folding>
+                <element signature="e#4381#4389#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarkovFour.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MarkovFour.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarkovWord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MarkovWord.java">
+      <file leaf-file-name="AbstractMarkovModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AbstractMarkovModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="73" column="66" lean-forward="true" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
-              <folding>
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#4366#4374#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="42">
+              <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="76" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,7 +84,7 @@
       <file leaf-file-name="MarkovWordTwo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MarkovWordTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
+            <state relative-caret-position="782">
               <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
@@ -84,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/src/MarkovWordOne.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="19" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -139,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -183,9 +204,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,7 +214,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lib/courserajava.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
   </component>
   <component name="RecentsManager">
@@ -438,61 +459,60 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.22 at 19h 19m 06s.xml">
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 17m 26s.xml">
       <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.22 at 19h 19m 48s.xml">
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 17m 29s.xml">
       <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.22 at 19h 20m 49s.xml">
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 17m 32s.xml">
       <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.22 at 19h 22m 10s.xml">
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 17m 35s.xml">
       <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_driveIndexOf - 2018.03.22 at 19h 18m 14s.xml">
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 17m 45s.xml">
+      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 24m 21s.xml">
+      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarkovRunnerWithInterface_driveIndexOf - 2018.03.23 at 16h 17m 56s.xml">
       <configuration name="MarkovRunnerWithInterface.driveIndexOf" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_driveIndexOf - 2018.03.22 at 19h 22m 55s.xml">
+    <history-entry file="MarkovRunnerWithInterface_driveIndexOf - 2018.03.23 at 16h 24m 47s.xml">
       <configuration name="MarkovRunnerWithInterface.driveIndexOf" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_driveIndexOf - 2018.03.22 at 19h 25m 40s.xml">
+    <history-entry file="MarkovRunnerWithInterface_driveIndexOf - 2018.03.23 at 16h 25m 07s.xml">
       <configuration name="MarkovRunnerWithInterface.driveIndexOf" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_runMarkovWordwithWordGram - 2018.03.22 at 19h 14m 36s.xml">
-      <configuration name="MarkovRunnerWithInterface.runMarkovWordwithWordGram" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WordGramTester_testHashCode - 2018.03.22 at 18h 39m 54s.xml">
-      <configuration name="WordGramTester.testHashCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WordGramTester_testInvalidSize - 2018.03.22 at 18h 24m 19s.xml">
-      <configuration name="WordGramTester.testInvalidSize" configurationId="JUnit" />
+    <history-entry file="MarkovRunnerWithInterface_driveIndexOf - 2018.03.23 at 16h 25m 10s.xml">
+      <configuration name="MarkovRunnerWithInterface.driveIndexOf" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277405" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33169934" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3310962" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21393643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3982103" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -507,11 +527,72 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/WordGram.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/MarkovRunnerWithInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordGram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+          <folding>
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarkovWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="73" column="66" lean-forward="true" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
+          <folding>
+            <element signature="e#4381#4389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarkovWordTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarkovModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarkovWordOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/MarkovRunnerWithInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2091">
@@ -524,7 +605,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -556,7 +640,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
-          <folding />
+          <folding>
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -671,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MarkovFour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../lib/courserajava.jar!/edu/duke/FileResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
@@ -713,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AbstractMarkovModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/WordGramTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -739,15 +812,31 @@
     <entry file="file://$PROJECT_DIR$/src/MarkovWordOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="19" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MarkovWordTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="782">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarkovFour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractMarkovModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -755,28 +844,29 @@
     <entry file="file://$PROJECT_DIR$/src/WordGram.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MarkovWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="73" column="66" lean-forward="true" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#4366#4374#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/MarkovRunnerWithInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="84" column="12" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="21" />
+        <state relative-caret-position="179">
+          <caret line="84" column="15" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarkovWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="93" column="40" lean-forward="false" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+          <folding>
+            <element signature="e#4381#4389#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
