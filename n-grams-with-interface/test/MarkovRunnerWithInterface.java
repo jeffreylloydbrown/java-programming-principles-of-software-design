@@ -89,6 +89,9 @@ class MarkovRunnerWithInterface {
         MarkovWordTwo two = new MarkovWordTwo();
         System.out.println(two);
         two.testIndexOf();
+        MarkovWord mw = new MarkovWord(3);
+        System.out.println(mw);
+        mw.testIndexOf();
     }
 
     @Test
@@ -97,7 +100,12 @@ class MarkovRunnerWithInterface {
         //String st = "test test test test";
         MarkovWordTwo markov = new MarkovWordTwo();
         markov.setTraining(st);
-        markov.getRandomText(10);
+        System.out.println(markov);
+        System.out.println(markov.getRandomText(10));
+        MarkovWord mw = new MarkovWord(3);
+        mw.setTraining(st);
+        System.out.println(mw);
+        System.out.println(mw.getRandomText(10));
     }
 
     @Test
@@ -121,6 +129,20 @@ class MarkovRunnerWithInterface {
         // the minister know me? Because I was not so great; xix. 21, says
         MarkovWordTwo two = new MarkovWordTwo();
         runModel(two, st, size, 549);
+    }
+
+    @Test
+    void runMarkovWordwithWordGram() {
+        FileResource fr = new FileResource("../data/confucius.txt");
+        String st = fr.asString();
+        st = st.replace('\n', ' ');
+        int size = 120;
+        int seed = 643;
+
+        // Expected first line:
+        // failure. The sense of his wasted powers may well have tempted
+        MarkovWord three = new MarkovWord(3);
+        runModel(three, st, size, seed);
     }
 
     @Test

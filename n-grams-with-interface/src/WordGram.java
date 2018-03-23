@@ -12,7 +12,7 @@ public class WordGram {
         if (size <= 0)
             throw new InvalidParameterException("size must be positive: "+size);
         if (start+size > source.length)
-            throw new InvalidParameterException("`start` of "+start+"+ `size` of "+ size +
+            throw new InvalidParameterException("`start` of "+start+" + `size` of "+ size +
                                                 " must be <= `source` length of "+source.length);
 
         myWords = new String[size];
