@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48aa4239-51b5-4daa-90d5-97166b8867ec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MarkovWord.java" afterPath="$PROJECT_DIR$/src/MarkovWord.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/MarkovRunnerWithInterface.java" afterPath="$PROJECT_DIR$/test/MarkovRunnerWithInterface.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="MarkovRunnerWithInterface.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/MarkovRunnerWithInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+            <state relative-caret-position="201">
+              <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -183,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MarkovRunnerWithInterface.runMarkovWordwithWordGram">
+  <component name="RunManager" selected="JUnit.MarkovRunnerWithInterface.driveGetRandomText">
     <configuration name="MarkovRunnerWithInterface.driveGetRandomText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="n-grams-with-interface" />
@@ -378,8 +376,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MarkovRunnerWithInterface.runMarkovWordwithWordGram" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MarkovRunnerWithInterface.driveGetRandomText" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MarkovRunnerWithInterface.driveGetRandomText" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MarkovRunnerWithInterface.runMarkovWordwithWordGram" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.MarkovRunnerWithInterface.driveIndexOf" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.WordGramTester" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.WordGramTester.testHashCode" />
@@ -405,24 +403,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 38m 12s.xml">
-      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 38m 21s.xml">
-      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 38m 28s.xml">
-      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 38m 33s.xml">
-      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 38m 38s.xml">
-      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 38m 42s.xml">
-      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 38m 46s.xml">
       <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
     </history-entry>
@@ -430,6 +410,24 @@
       <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 39m 00s.xml">
+      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 45m 22s.xml">
+      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 45m 35s.xml">
+      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 45m 38s.xml">
+      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 45m 42s.xml">
+      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 45m 46s.xml">
+      <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarkovRunnerWithInterface_driveGetRandomText - 2018.03.23 at 16h 45m 49s.xml">
       <configuration name="MarkovRunnerWithInterface.driveGetRandomText" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MarkovRunnerWithInterface_runMarkovWordwithWordGram - 2018.03.23 at 16h 40m 33s.xml">
@@ -448,7 +446,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33006537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33006537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -458,7 +456,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3970588" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3970588" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -883,8 +881,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/MarkovRunnerWithInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        <state relative-caret-position="201">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding />
         </state>
       </provider>

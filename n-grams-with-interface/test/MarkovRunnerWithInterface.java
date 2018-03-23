@@ -96,8 +96,8 @@ class MarkovRunnerWithInterface {
 
     @Test
     void driveGetRandomText () {
-        String st = "this is just a test yes this is a simple test";
-        //String st = "test test test test";
+        String st = "this is just a test yes this is a simple test";  // rarely 10 words cuz most follows are single word choices.
+        //String st = "test test test test";  // always length 10 cuz key has multiple follows values to choose.
 
         MarkovWordTwo markov = new MarkovWordTwo();
         markov.setTraining(st);
