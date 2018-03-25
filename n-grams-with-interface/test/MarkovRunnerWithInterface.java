@@ -41,29 +41,42 @@ class MarkovRunnerWithInterface {
 
     @Test
     void testHashMap () {
+/*
         EfficientMarkovModel e = new EfficientMarkovModel(2);
         e.setRandom(42);
         e.setTraining("yes-this-is-a-thin-pretty-pink-thistle");
         e.printHashMapInfo();
+*/
+        EfficientMarkovWord ew = new EfficientMarkovWord(2);
+        ew.setRandom(42);
+        //ew.setTraining("this is a test yes this is really a test");
+        ew.setTraining("this is a test yes this is really a test yes a test this is wow");
+        ew.printHashMapInfo();
     }
 
     @Test
     void compareMethods() {
         int order = 2;
         int seed = 42;
-        int outputLen = 1000;
+        int outputLen = 20;
         FileResource fr = new FileResource("../data/hawthorne.txt");
+        //FileResource fr = new FileResource("../data/romeo.txt");
+        String st = fr.asString().replace('\n', ' ');
+        /*
         MarkovModel m = new MarkovModel(order);
         EfficientMarkovModel e = new EfficientMarkovModel(order);
+        */
+        MarkovWord m = new MarkovWord(order);
+        EfficientMarkovWord e = new EfficientMarkovWord(order);
 
         long start = System.nanoTime();
-        runModel(m, fr.asString(), outputLen, seed);
+        runModel(m, st, outputLen, seed);
         long end = System.nanoTime();
         System.out.println(m.toString()+" took "+(end-start)/1000000000.0+" seconds");
         start = System.nanoTime();
-        runModel(e, fr.asString(), outputLen, seed);
+        runModel(e, st, outputLen, seed);
         end = System.nanoTime();
-        System.out.println(m.toString()+" took "+(end-start)/1000000000.0+" seconds");
+        System.out.println(e.toString()+" took "+(end-start)/1000000000.0+" seconds");
     }
 
     private void printOut(String s){

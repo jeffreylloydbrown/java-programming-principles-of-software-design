@@ -12,12 +12,12 @@ public class EfficientMarkovWord implements IMarkovModel {
     private int myOrder;
     private String[] myText;
     private Random myRandom;
-    private HashMap<WordGram, ArrayList<String>> followsMap;
+    private HashMap<String, ArrayList<String>> followsMap;
 
     public EfficientMarkovWord(int order) {
         myRandom = new Random();
         myOrder = order;
-        followsMap = new HashMap<WordGram, ArrayList<String>>();
+        followsMap = new HashMap<String, ArrayList<String>>();
     }
 
     public void setRandom(int seed) {
@@ -26,7 +26,7 @@ public class EfficientMarkovWord implements IMarkovModel {
 
     public void setTraining(String text){
         if (text != null && ! text.isEmpty()) {
-            myText = text.split("\\s+");
+            myText = text.trim().split("\\s+");
             buildMap();
         }
     }
@@ -51,17 +51,45 @@ public class EfficientMarkovWord implements IMarkovModel {
         // only call getFollows if the key doesn't exist, because every call for
         // `key` will return the same answer so we only need to call if `key`
         // doesn't exist.
-        for (int k = 0; k < myText.length-myOrder+1; k++) {
+//        System.out.println("k running thru "+(myText.length-myOrder));
+ //       int added = 0;
+        ArrayList<String> follows;
+        for (int k = 0; k < myText.length-myOrder; k++) {
             WordGram kGram = new WordGram(myText, k, myOrder);
-            if (! followsMap.containsKey(kGram))
-                followsMap.put(kGram, makeFollows(kGram));
+            /*
+            if (k % 1000 == 0) {
+                System.out.println("k = "+k+", added = "+added);
+                System.out.println("map has "+ followsMap.size()+" keys");
+            }
+            */
+            if (! followsMap.containsKey(kGram.toString())) {
+                //ArrayList<String> follows = makeFollows(kGram, k);
+                //followsMap.put(kGram.toString(), follows);
+                follows = new ArrayList<String>();
+            }
+            else {
+//                added++;
+                follows = followsMap.get(kGram.toString());
+            }
+            follows.add(myText[k+myOrder]);
+            //System.out.println(kGram.toString()+": "+follows);
+            followsMap.put(kGram.toString(), follows);
+            /*
+            if (! followsMap.containsKey(kGram.toString()))
+                followsMap.put(kGram.toString(), makeFollows(kGram, k));
+            */
         }
+        // now make sure the last possible key is in the map, even if it
+        // needs an empty follows list.
+        WordGram kGram = new WordGram(myText, myText.length-myOrder, myOrder);
+        if (! followsMap.containsKey(kGram.toString()))
+            followsMap.put(kGram.toString(), new ArrayList<String>());
     }
 
     void printHashMapInfo() {
         // we're told to print contents only if map is small.
         if (followsMap.keySet().size() < 15) {
-            for (WordGram kGram : followsMap.keySet())
+            for (String kGram : followsMap.keySet())
                 System.out.println(kGram + ": " + followsMap.get(kGram));
         }
 
@@ -69,7 +97,7 @@ public class EfficientMarkovWord implements IMarkovModel {
         int biggest = largestValue();
         System.out.println("size of largest array = "+biggest);
         System.out.println("keys of that size:");
-        for (WordGram kGram : followsMap.keySet()) {
+        for (String kGram : followsMap.keySet()) {
             if (biggest == followsMap.get(kGram).size())
                 System.out.println("'"+kGram+"'");
         }
@@ -79,7 +107,7 @@ public class EfficientMarkovWord implements IMarkovModel {
     // find the size of the largest array in the hashmap
     private int largestValue () {
         int largestSize = 0;
-        for (WordGram kGram : followsMap.keySet()) {
+        for (String kGram : followsMap.keySet()) {
             int thisSize = followsMap.get(kGram).size();
             if (thisSize > largestSize)
                 largestSize = thisSize;
@@ -146,9 +174,8 @@ public class EfficientMarkovWord implements IMarkovModel {
     // to find these matches.  This is the `getFollows` method in other MarkovWord classes.
     // I thought a long time about instaniating a MarkovWord object in order to reuse it,
     // and decided against the additional "uses a" dependency.
-    private ArrayList<String> makeFollows(WordGram kGram) {
+    private ArrayList<String> makeFollows(WordGram kGram, int pos) {
         ArrayList<String> follows = new ArrayList<String>();
-        int pos = 0;
         int kGramLength = kGram.length();
         while (pos < myText.length - kGramLength) {
             int start = indexOf(myText, kGram, pos);
@@ -166,6 +193,6 @@ public class EfficientMarkovWord implements IMarkovModel {
     // unknown test cases by returning an empty list if `kGram` isn't part of our
     // training text.
     protected ArrayList<String> getFollows (WordGram kGram) {
-        return followsMap.getOrDefault(kGram, new ArrayList<String>());
+        return followsMap.getOrDefault(kGram.toString(), new ArrayList<String>());
     }
 }  // EfficientMarkovWord
