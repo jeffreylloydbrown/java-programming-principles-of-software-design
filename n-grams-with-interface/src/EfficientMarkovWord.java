@@ -12,12 +12,12 @@ public class EfficientMarkovWord implements IMarkovModel {
     private int myOrder;
     private String[] myText;
     private Random myRandom;
-    private HashMap<String, ArrayList<String>> followsMap;
+    private HashMap<WordGram, ArrayList<String>> followsMap;
 
     public EfficientMarkovWord(int order) {
         myRandom = new Random();
         myOrder = order;
-        followsMap = new HashMap<String, ArrayList<String>>();
+        followsMap = new HashMap<WordGram, ArrayList<String>>();
     }
 
     public void setRandom(int seed) {
@@ -50,20 +50,20 @@ public class EfficientMarkovWord implements IMarkovModel {
             ArrayList<String> follows = getFollows(kGram);
             follows.add(myText[k+myOrder]);
             //System.out.println(kGram+": "+follows);
-            followsMap.put(kGram.toString(), follows);
+            followsMap.put(kGram, follows);
         }
         // now make sure the last possible key is in the map, even if it
         // needs an empty follows list.  Otherwise we get the wrong key count
         // in the quizzes.
         WordGram kGram = new WordGram(myText, myText.length-myOrder, myOrder);
-        if (! followsMap.containsKey(kGram.toString()))
-            followsMap.put(kGram.toString(), new ArrayList<String>());
+        if (! followsMap.containsKey(kGram))
+            followsMap.put(kGram, new ArrayList<String>());
     }
 
     void printHashMapInfo() {
         // we're told to print contents only if map is small.
         if (followsMap.keySet().size() < 15) {
-            for (String kGram : followsMap.keySet())
+            for (WordGram kGram : followsMap.keySet())
                 System.out.println(kGram + ": " + followsMap.get(kGram));
         }
 
@@ -71,7 +71,7 @@ public class EfficientMarkovWord implements IMarkovModel {
         int biggest = largestValue();
         System.out.println("size of largest array = "+biggest);
         System.out.println("keys of that size:");
-        for (String kGram : followsMap.keySet()) {
+        for (WordGram kGram : followsMap.keySet()) {
             if (biggest == followsMap.get(kGram).size())
                 System.out.println("'"+kGram+"'");
         }
@@ -81,7 +81,7 @@ public class EfficientMarkovWord implements IMarkovModel {
     // find the size of the largest array in the hashmap
     private int largestValue () {
         int largestSize = 0;
-        for (String kGram : followsMap.keySet()) {
+        for (WordGram kGram : followsMap.keySet()) {
             int thisSize = followsMap.get(kGram).size();
             if (thisSize > largestSize)
                 largestSize = thisSize;
@@ -128,7 +128,7 @@ public class EfficientMarkovWord implements IMarkovModel {
     // array list if `kGram` isn't found, I can use this method when building
     // the map.  Gotta appreciate getOrDefault() !!
     protected ArrayList<String> getFollows (WordGram kGram) {
-        return followsMap.getOrDefault(kGram.toString(), new ArrayList<String>());
+        return followsMap.getOrDefault(kGram, new ArrayList<String>());
     }
 
 }  // EfficientMarkovWord
