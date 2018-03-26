@@ -21,7 +21,7 @@ class MarkovRunnerWithInterface {
 
     @Test
     public void runMarkov() {
-        FileResource fr = new FileResource();
+        FileResource fr = new FileResource("../data/romeo.txt");
         String st = fr.asString();
         st = st.replace('\n', ' ');
         int size = 200;
@@ -62,10 +62,7 @@ class MarkovRunnerWithInterface {
         FileResource fr = new FileResource("../data/hawthorne.txt");
         //FileResource fr = new FileResource("../data/romeo.txt");
         String st = fr.asString().replace('\n', ' ');
-        /*
-        MarkovModel m = new MarkovModel(order);
-        EfficientMarkovModel e = new EfficientMarkovModel(order);
-        */
+
         MarkovWord m = new MarkovWord(order);
         EfficientMarkovWord e = new EfficientMarkovWord(order);
 
@@ -73,6 +70,7 @@ class MarkovRunnerWithInterface {
         runModel(m, st, outputLen, seed);
         long end = System.nanoTime();
         System.out.println(m.toString()+" took "+(end-start)/1000000000.0+" seconds");
+        System.out.println("==================================");
         start = System.nanoTime();
         runModel(e, st, outputLen, seed);
         end = System.nanoTime();
