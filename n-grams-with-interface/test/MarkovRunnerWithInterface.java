@@ -171,7 +171,7 @@ class MarkovRunnerWithInterface {
         e.setRandom(615);
         e.setTraining(st);
         e.printHashMapInfo();
-        // practicq quiz says 41309 is correct key count.  That's what I got.
+        // practice quiz says 41309 is correct key count.  That's what I got.
         // practice quiz says largest array of 3174 is not correct.  don't know why.
         */
         FileResource fr = new FileResource("../data/confucius.txt");
@@ -181,6 +181,38 @@ class MarkovRunnerWithInterface {
         //runModel(one, st, 80, 139);
         MarkovWordTwo two = new MarkovWordTwo();
         runModel(two, st, 80, 832);
+    }
+
+    @Test
+    void practiceQuiz_WordGram_Class () {
+        FileResource fr = new FileResource("../data/confucius.txt");
+        String st = fr.asString().replace('\n', ' ');
+
+        // Q1 answer is 'agreement violates the law of the state applicable to this agreement, ' no quotes
+        //MarkovWord q1 = new MarkovWord(3);
+        //runModel(q1, st, 120, 621);
+
+        // Q2 answer is 'ministers, and there was order below heaven. King Wu[80] said, ' no quotes
+        //MarkovWord q2 = new MarkovWord(5);
+        //runModel(q2, st, 120, 844);
+
+        // Q3 answer is 30,045 keys
+        System.out.println("Q3:  (correct answer is 30,045 keys)");
+        EfficientMarkovWord q3 = new EfficientMarkovWord(3);
+        q3.setRandom(371);
+        q3.setTraining(st);
+        q3.printHashMapInfo();
+
+        // Q4 answer is 376, key for it is 'The Master'
+        // map has 22612 keys.
+        // size of largest array = 376
+        // keys of that size:
+        // 'The Master'
+        System.out.println("Q4:  (correct answer is largest array is 376)");
+        EfficientMarkovWord q4 = new EfficientMarkovWord(2);
+        q4.setRandom(65);
+        q4.setTraining(st);
+        q4.printHashMapInfo();
     }
 
 }
