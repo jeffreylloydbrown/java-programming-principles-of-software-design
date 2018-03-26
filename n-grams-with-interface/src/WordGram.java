@@ -2,7 +2,6 @@ import java.security.InvalidParameterException;
 
 public class WordGram {
     private String[] myWords;
-    private int myHash;
 
     public WordGram(String[] source, int start, int size) {
         if (source == null || source.length == 0)
@@ -17,10 +16,9 @@ public class WordGram {
 
         myWords = new String[size];
         System.arraycopy(source, start, myWords, 0, size);
-        myHash = toString().hashCode();
     }
 
-    public int hashCode() { return myHash; }
+    public int hashCode() { return toString().hashCode(); }
 
     public String wordAt(int index) {
         if (index < 0 || index >= myWords.length) {
