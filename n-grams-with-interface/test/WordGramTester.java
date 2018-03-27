@@ -71,7 +71,7 @@ class WordGramTester {
     @Test
     public void testInvalidStart () {
         confirmBadStart(-1);
-        confirmBadStart(47);
+        confirmBadStart(14);
     }
 
     private void confirmBadSize(int size) {
@@ -149,6 +149,21 @@ class WordGramTester {
             if (first.equals(list.get(k))) {
                 System.out.println("matched at "+k+" "+list.get(k));
             }
+        }
+    }
+
+    @Test
+    public void testEqualsNullObject() {
+        String source = "this is";
+        String[] words = source.split("\\s+");
+        try {
+            WordGram wg = new WordGram(words, 0, words.length);
+            wg.equals(null);
+            assertTrue(false, "exception expected, didn't throw any exception");
+        } catch (InvalidParameterException ipe) {
+            // got the expected exception, this is a pass
+        } catch (Exception e) {
+            assertTrue(false, "expected InvalidParameterException, got "+e.toString());
         }
     }
 

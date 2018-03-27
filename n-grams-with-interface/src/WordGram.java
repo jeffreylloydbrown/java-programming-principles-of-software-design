@@ -4,17 +4,18 @@ public class WordGram {
     private String[] myWords;
     private int myHash;         // MUST UPDATE THIS ANY TIME myWords CHANGES!!!!!!!
 
+    private void require (boolean condition, String message) {
+        if (! condition)
+            throw new InvalidParameterException(message);
+    }
+
     public WordGram(String[] source, int start, int size) {
-        if (source == null || source.length == 0)
-            throw new InvalidParameterException("`source` is null or empty");
-        if (start < 0 || start > source.length)
-            throw new InvalidParameterException("`source` of size "+source.length+
-                                                " isn't indexable by `start`: "+start);
-        if (size <= 0)
-            throw new InvalidParameterException("size must be positive: "+size);
-        if (start+size > source.length)
-            throw new InvalidParameterException("`start` of "+start+" + `size` of "+ size +
-                                                " must be <= `source` length of "+source.length);
+        require(source != null && source.length > 0, "`source` is null or empty");
+        require(0 <= start && start < source.length,
+                "`source` of size "+source.length+" isn't indexable by `start`: "+start);
+        require(size > 0, "size must be positive: "+size);
+        require(start+size <= source.length,  // start 0 size source.length is allowed!
+                "`start` of "+start+" + `size` of "+size+" must be <= `source` length of "+source.length);
 
         myWords = new String[size];
         System.arraycopy(source, start, myWords, 0, size);
@@ -43,6 +44,7 @@ public class WordGram {
     }
 
     public boolean equals(Object o) {
+        require(o != null, "equals() received a null object");
         WordGram other = (WordGram) o;
         if (myWords.length != other.length()) return false;
         // same size, so compare contents.
