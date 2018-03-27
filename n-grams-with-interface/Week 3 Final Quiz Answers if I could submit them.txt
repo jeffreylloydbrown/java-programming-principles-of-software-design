@@ -1,0 +1,12 @@
+1.  Each of three randomly generated texts will all be identical.
+2.  'eeuefmespwhsfoyu, s giowhersa eell; bma s.7shni:.at.ttdr.w aknf ' no quotes
+3.  10453
+4.  3715
+5.  ' y O wirs bloay Ger. fo. tifthy The, A My; st- ie d, s. bloulate, ' no quotes
+6.  'man in a green, for that haste, for a foot in her from Tybalt! ' no quotes
+7.  'e uncle Capulet's orchard. Enter an officer, and light- more ' no quotes
+8.  In the setTraining method.
+9.  70162
+10. 1549
+
+Surprised the final quiz only covered character markov stuff, no WordGram stuff.
