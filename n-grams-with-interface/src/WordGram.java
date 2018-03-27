@@ -2,12 +2,14 @@ import java.security.InvalidParameterException;
 
 public class WordGram {
     private String[] myWords;
+    private int myHash;         // MUST UPDATE THIS ANY TIME myWords CHANGES!!!!!!!
 
     public WordGram(String[] source, int start, int size) {
         if (source == null || source.length == 0)
             throw new InvalidParameterException("`source` is null or empty");
         if (start < 0 || start > source.length)
-            throw new InvalidParameterException("`source` of size "+source.length+" isn't indexable by `start`: "+start);
+            throw new InvalidParameterException("`source` of size "+source.length+
+                                                " isn't indexable by `start`: "+start);
         if (size <= 0)
             throw new InvalidParameterException("size must be positive: "+size);
         if (start+size > source.length)
@@ -16,9 +18,10 @@ public class WordGram {
 
         myWords = new String[size];
         System.arraycopy(source, start, myWords, 0, size);
+        myHash = toString().hashCode();
     }
 
-    public int hashCode() { return toString().hashCode(); }
+    public int hashCode() { return myHash; }
 
     public String wordAt(int index) {
         if (index < 0 || index >= myWords.length) {
@@ -63,6 +66,10 @@ public class WordGram {
         // you lose the first word
         System.arraycopy(out.myWords, 1, out.myWords, 0, out.myWords.length-1);
         out.myWords[out.myWords.length-1] = word;
+
+        // changed `myWords`, so must recompute the hash code!  Otherwise
+        // hashmap lookup will fail.
+        out.myHash = out.toString().hashCode();
 
         return out;
     }
