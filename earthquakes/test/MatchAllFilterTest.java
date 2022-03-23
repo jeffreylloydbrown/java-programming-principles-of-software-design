@@ -52,6 +52,7 @@ class MatchAllFilterTest {
     private void showQuakes (ArrayList<QuakeEntry> list) {
         for (QuakeEntry qe : list)
             System.out.println(qe);
+        System.out.println(list.size() + " quakes match the criteria");
     }
 
     @Test
