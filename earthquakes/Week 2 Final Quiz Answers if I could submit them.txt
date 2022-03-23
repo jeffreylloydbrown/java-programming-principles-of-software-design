@@ -1,8 +1,0 @@
-1.  -100000.00 with 70 passes (pass count changes with each quiz)
-2.  1301 with earthQuakeDataWeekDec6sample1.atom (data file can change each run)
-3.  1255 with earthQuakeDataWeekDec6sample2.atom (data file can change each run)
-4.  125984
-5.  245189
-6.  -53600.00 with earthQuakeDataWeekDec6sample2.atom (data file can change each run)
-7.  -7630.00 with earthQuakeDataWeekDec6sample2.atom (data file can change each run)
-8.  -1490.00 with earthQuakeDataWeekDec6sample2.atom (data file can change each run)
