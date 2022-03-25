@@ -5,3 +5,5 @@ Duke teaches these courses with the BlueJ IDE.  I used it with the first 2 cours
 That means BlueJ's wonderful object bench is not present.  I've added a number of test drivers to allow IntelliJ to execute the stuff needed for quizzes.  The driver "tests" are EarthQuakeClientTest and EarthQuakeClient2Test.  You may need to modify them to get the answers for the various quizzes.
 
 You will certainly need to modify EarthQuakeClient.java and EarthQuakeClient2.java to get those answers.  The data files and parameters in the quiz questions vary each time you take a quiz, so you must carefully read the question, then make sure the code matches the files and parameters being requested.  Once you modify the appropriate method(s) for a question, execute the related test and its output will be in the test console.
+
+[My Coursera certificate](https://coursera.org/share/ade787302aa89de4c81197b608d2cd90)
